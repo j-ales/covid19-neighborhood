@@ -2,3 +2,4 @@ matplotlib
 numpy
 pandas
 requests
+uk_covid19
