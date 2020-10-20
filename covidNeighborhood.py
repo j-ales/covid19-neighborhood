@@ -74,9 +74,10 @@ if not os.path.isfile(filename) or \
     get_file(url)
 
 # %% Use API
-# Not implemeented fully.
+# # Not implemeented fully.
 # all_nations = [
-#     "areaType=Region"
+#     "areaType=ltla"
+#
 # ]
 #
 # cases_and_deaths = {
@@ -84,21 +85,23 @@ if not os.path.isfile(filename) or \
 #     "areaName": "areaName",
 #     "areaCode": "areaCode",
 #     "newCasesByPublishDate": "newCasesByPublishDate",
-#     "newCasesBySpecimenDate": "newCasesBySpecimenDate",
-#     "cumCasesByPublishDate": "cumCasesByPublishDate",
-#     "newDeathsByDeathDate": "newDeathsByDeathDate",
-#     "cumDeathsByDeathDate": "cumDeathsByDeathDate"
+#     # "newCasesBySpecimenDate": "newCasesBySpecimenDate",
+#     # "cumCasesByPublishDate": "cumCasesByPublishDate",
+#     # "newDeathsByDeathDate": "newDeathsByDeathDate",
+#     # "cumDeathsByDeathDate": "cumDeathsByDeathDate"
 #    # "newTestsByPublishDate": "newTestsByPublishDate"
 # }
 #
 # api = Cov19API(
 #     filters=all_nations,
-#     structure=cases_and_deaths
+#     structure=cases_and_deaths,
+#     latest_by="newCasesByPublishDate"
 # )
 #
 #  # api.get_csv(save_as="data.csv")
 #  #  df = pandas.read_csv('./data.csv')
 # df = api.get_dataframe()
+# #data = api.get_json()
 
 # %% Load the data.
 MSOA_centroids = pandas.read_csv('./MSOA_2011_EW_PWC_COORD_V2.CSV')
@@ -111,9 +114,20 @@ HE_centroids = pandas.read_csv('./learning-providers-plus.csv')
 covidCases = pandas.read_csv('./MSOAs_latest.csv')
 covidFileTimeStamp = os.path.getmtime('./MSOAs_latest.csv')
 
+#Pop Density comes from Table QS102EW
+#https://www.nomisweb.co.uk/census/2011/qs102uk
+MSOA_density=pandas.read_csv('./MSOA_density.csv')
+MSOA_density['msoacd']=MSOA_density['msoacd'].str.replace(' : (.*)','',regex=True)
+
 #The student population numbers come from Table ID: DC6108EW, from the 2011 census
 #https://www.nomisweb.co.uk/census/2011/dc6108ew
 MSOA_student_pop = pandas.read_csv('./MSOA_student_pop.csv')
+
+#Number of employees in bars/restuarants comes from the employee survey:
+#https://www.nomisweb.co.uk/datasets/newbres6pub
+MSOA_pubs = pandas.read_csv('./MSOA_pubs_bars.csv')
+MSOA_pubs['msoacd']=MSOA_pubs['msoacd'].str.replace(' : (.*)','',regex=True)
+
 
 #Definitions for several groupings of univeristies.
 russell_group_rows = (HE_centroids['GROUPS'].str.contains('Russell_Group') == True)
@@ -145,12 +159,20 @@ uni_distance = np.nanmin(allDist, axis=1)
 rg_distance = np.nanmin(allDist[:, russell_group_rows], axis=1)
 mp_distance = np.nanmin(allDist[:, million_plus_rows], axis=1)
 closestUniIdx = np.nanargmin(allDist, axis=1)
+tmp = allDist
+#Stupid way to remove non russell group from disance calc.  Just set the distance to highvalue
+tmp[:, (-1*russell_group_rows.values+1)==1]=10000
+closestRgIdx = np.nanargmin(tmp, axis=1)
 
 uni_name = HE_centroids['PROVIDER_NAME'].iloc[closestUniIdx].values
+rg_name  = HE_centroids['PROVIDER_NAME'].iloc[closestRgIdx].values
 MSOA_centroids.insert(1, "uni_distance", uni_distance)
 MSOA_centroids.insert(1, "rg_distance", rg_distance)
-MSOA_centroids.insert(1, "mp_disance", rg_distance)
+MSOA_centroids.insert(1, "mp_distance", mp_distance)
 MSOA_centroids.insert(1, "uni_name", uni_name)
+MSOA_centroids.insert(1, "rg_name", rg_name)
+
+
 
 
 # %% Make a plot of cases per week that classifies MSOAs by distance to universities.
@@ -168,6 +190,9 @@ distThresh = 1
 merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='msoa11_cd')
 merged = pandas.merge(left=merged, right=MSOA_pop, left_on='MSOA11CD', right_on='MSOA Code')
 merged = pandas.merge(left=merged, right=MSOA_student_pop, left_on='MSOA11CD', right_on='MSOA Code')
+merged = pandas.merge(left=merged, right=MSOA_density, left_on='MSOA11CD', right_on='msoacd')
+merged = pandas.merge(left=merged, right=MSOA_pubs, left_on='MSOA11CD', right_on='msoacd')
+
 
 merged = merged.replace(-99, 0)
 merged = merged.sort_values('uni_distance')
@@ -213,16 +238,362 @@ plt.legend([str(numberClose) + ' areas within  ' + str(distThresh ) + ' miles of
 
 plt.show()
 
-# %% Separate data by student population concentration.
+# %% Separate data by student population concentration & distance to universities
 
 ###
 
-thresh = .25
-
+popThresh = .25
+#distThresh = 500
 ####
 
-close = merged.loc[merged['Student Percentage'] >= thresh, :]
-far = merged.loc[merged['Student Percentage'] < thresh, :]
+#Which attributes to select data by.
+#classifyBy = 'Density (number of persons per hectare)'
+classifyBy = 'Student Percentage'
+#Choose russell group set, or all universities.
+uniGroup   = 'uni_distance'
+#uniGroup   = 'rg_distance'
+
+# close = merged.loc[merged['uni_distance'] < distThresh, :]
+# far = merged.loc[merged['uni_distance'] >= distThresh, :]
+#Select specific Uni
+selectTheseUni = np.full(merged.shape[0], True)
+#selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
+
+close = merged.loc[( merged[classifyBy] >= popThresh) & selectTheseUni, :]
+far = merged.loc[ (merged[classifyBy] < popThresh) & selectTheseUni, :]
+rest = merged.loc[~selectTheseUni, :]
+
+
+
+# nNear = 400;
+# close = merged.iloc[1:nNear,:]
+# far = merged.iloc[(nNear+1):,:]
+
+closeTotalPop = np.sum(close['Total Pop'])
+farTotalPop = np.sum(far['Total Pop'])
+restTotalPop = np.sum(rest['Total Pop'])
+
+# closeCasePer100 = 1e5*np.nansum(close.filter(like='wk_'), axis=0)/closeTotalPop
+# farCasePer100 = 1e5*np.nansum(far.filter(like='wk_'), axis=0)/farTotalPop
+filterSpec='wk_*|latest_7_days(?!_)'
+#filterSpec = 'wk_*'
+
+closeCasePer100 = np.nanmean(1e5 * close.filter(regex=filterSpec).div(close['Total Pop'], axis=0), axis=0)
+farCasePer100 = np.nanmean(1e5 * far.filter(regex=filterSpec).div(far['Total Pop'], axis=0), axis=0)
+#restCasePer100 = np.nanmean(1e5 * rest.filter(regex=filterSpec).div(rest['Total Pop'], axis=0), axis=0)
+
+# closeCasePer100 = np.nansum(close.filter(regex='wk_*'), axis=0)
+# farCasePer100 = np.nansum(far.filter(regex='wk_*'), axis=0)
+
+numberClose = len(close)
+numberFar = len(far)
+
+first = datetime.datetime.fromisocalendar(2020, 5, 7)
+last  = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5, 7)
+date_range = mdates.drange(first,last,datetime.timedelta(days=7))
+
+fig = plt.figure(figsize=(8,5),dpi=100)
+ax = fig.add_subplot(1, 1, 1)
+
+
+ax.plot(date_range,closeCasePer100, linewidth=3)
+ax.plot(date_range,farCasePer100, linewidth=3)
+#ax.plot(date_range,restCasePer100, linewidth=3)
+
+
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
+ax.xaxis.set_major_locator(mdates.DayLocator(bymonthday=1))
+
+# Hide the right and top spines
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+#ax.spines['bottom'].set_position('zero')
+
+# Only show ticks on the left and bottom spines
+ax.yaxis.set_ticks_position('left')
+ax.xaxis.set_ticks_position('bottom')
+ax.xaxis.set_tick_params(width=2,length=8)
+plt.ylabel('Cases per 100k population',fontsize=12)
+#plt.yscale("log")
+#plt.ylim(1,10e3)
+plt.xlim([datetime.date(2020, 7, 1), date_range[-1]+4])
+
+shadeFrom = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1, 1)
+shadeTo   = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1+1, 2)
+
+ax.fill_between( (shadeFrom,shadeTo),ax.get_ylim()[0],ax.get_ylim()[1], alpha=0.25)
+
+# "You scored {:.0%}"
+# '{} areas where students are {:.0%} of pop.'.format(numberClose,thresh)
+plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,popThresh),
+            '{} areas with students less than {:.0%} of pop.'.format(numberFar,popThresh)],
+           fontsize=12)
+
+
+
+# plt.title('Cases Per 100k in Univ')
+plt.gcf().autofmt_xdate()
+plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood',
+             (0,0), (-20, -50), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+plt.annotate('Latest Week Provisional\nsubject to revision.',
+             (.8,.1), (0, 0), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+
+plt.show()
+
+# %% Separate data by student population concentration & distance to universities
+
+###
+
+popThresh = .25
+distThresh = 2
+####
+
+#Which attributes to select data by.
+#classifyBy = 'Density (number of persons per hectare)'
+classifyBy = 'Student Percentage'
+#Choose russell group set, or all universities.
+#uniGroup   = 'uni_distance'
+uniGroup   = 'rg_distance'
+
+# close = merged.loc[merged['uni_distance'] < distThresh, :]
+# far = merged.loc[merged['uni_distance'] >= distThresh, :]
+#Select specific Uni
+selectTheseUni = np.full(merged.shape[0], True)
+#selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
+
+close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
+far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
+rest = merged.loc[(merged[uniGroup] >= distThresh), :]
+
+
+
+# nNear = 400;
+# close = merged.iloc[1:nNear,:]
+# far = merged.iloc[(nNear+1):,:]
+
+closeTotalPop = np.sum(close['Total Pop'])
+farTotalPop = np.sum(far['Total Pop'])
+restTotalPop = np.sum(rest['Total Pop'])
+
+# closeCasePer100 = 1e5*np.nansum(close.filter(like='wk_'), axis=0)/closeTotalPop
+# farCasePer100 = 1e5*np.nansum(far.filter(like='wk_'), axis=0)/farTotalPop
+filterSpec='wk_*|latest_7_days(?!_)'
+#filterSpec = 'wk_*'
+
+closeCasePer100 = np.nanmean(1e5 * close.filter(regex=filterSpec).div(close['Total Pop'], axis=0), axis=0)
+farCasePer100 = np.nanmean(1e5 * far.filter(regex=filterSpec).div(far['Total Pop'], axis=0), axis=0)
+restCasePer100 = np.nanmean(1e5 * rest.filter(regex=filterSpec).div(rest['Total Pop'], axis=0), axis=0)
+
+# closeCasePer100 = np.nansum(close.filter(regex='wk_*'), axis=0)
+# farCasePer100 = np.nansum(far.filter(regex='wk_*'), axis=0)
+
+numberClose = len(close)
+numberFar = len(far)
+
+first = datetime.datetime.fromisocalendar(2020, 5, 7)
+last  = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5, 7)
+date_range = mdates.drange(first,last,datetime.timedelta(days=7))
+
+fig = plt.figure(figsize=(8,5),dpi=100)
+ax = fig.add_subplot(1, 1, 1)
+
+
+ax.plot(date_range,closeCasePer100, linewidth=3)
+ax.plot(date_range,farCasePer100, linewidth=3)
+ax.plot(date_range,restCasePer100, linewidth=3)
+
+
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
+ax.xaxis.set_major_locator(mdates.DayLocator(bymonthday=1))
+
+# Hide the right and top spines
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+#ax.spines['bottom'].set_position('zero')
+
+# Only show ticks on the left and bottom spines
+ax.yaxis.set_ticks_position('left')
+ax.xaxis.set_ticks_position('bottom')
+ax.xaxis.set_tick_params(width=2,length=8)
+plt.ylabel('Cases per 100k population',fontsize=12)
+#plt.yscale("log")
+#plt.ylim(1,10e3)
+plt.xlim([datetime.date(2020, 7, 1), date_range[-1]+4])
+
+shadeFrom = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1, 1)
+shadeTo   = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1+1, 2)
+
+ax.fill_between( (shadeFrom,shadeTo),ax.get_ylim()[0],ax.get_ylim()[1], alpha=0.15)
+
+# "You scored {:.0%}"
+# '{} areas where students are {:.0%} of pop.'.format(numberClose,thresh)
+# plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,popThresh),
+#             '{} areas with students less than {:.0%} of pop.'.format(numberFar,popThresh)],
+#            fontsize=12)
+
+# plt.legend(['{} areas within {} mile of Oxbridge\n and students over {:.0%} of population'.format(numberClose,distThreshNear, popThresh),
+#             '{} areas within {} mile of Oxbridge\n and students below {:.0%} of population'.format(numberFar,distThreshNear, popThresh),
+#             '{} areas outside of Oxbridge'.format(len(rest))],
+#             fontsize=12)
+
+plt.legend(['{} areas within {} miles of Russell Group university\n and students over {:.0%} of population'.format(numberClose,distThresh, popThresh),
+             '{} areas within {} miles of Russell Group university\n and students below {:.0%} of population'.format(numberFar,distThresh, popThresh),
+            '{} areas outside {} miles of a Russell Group university'.format(len(rest),distThresh)],
+            fontsize=12)
+
+# plt.title('Cases Per 100k in Univ')
+plt.gcf().autofmt_xdate()
+plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood',
+             (0,0), (-20, -50), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+plt.annotate('Latest Week Provisional\nsubject to revision.',
+             (.8,.1), (0, 0), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+
+plt.show()
+
+# %% Separate Oxbridge.
+
+###
+
+popThresh = .25
+distThresh = 5
+####
+
+#Which attributes to select data by.
+#classifyBy = 'Density (number of persons per hectare)'
+classifyBy = 'Student Percentage'
+#Choose russell group set, or all universities.
+#uniGroup   = 'uni_distance'
+uniGroup   = 'rg_distance'
+
+# close = merged.loc[merged['uni_distance'] < distThresh, :]
+# far = merged.loc[merged['uni_distance'] >= distThresh, :]
+#Select specific Uni
+#selectTheseUni = np.full(merged.shape[0], True)
+selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
+
+close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
+far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
+rest = merged.loc[~selectTheseUni, :]
+
+
+
+# nNear = 400;
+# close = merged.iloc[1:nNear,:]
+# far = merged.iloc[(nNear+1):,:]
+
+closeTotalPop = np.sum(close['Total Pop'])
+farTotalPop = np.sum(far['Total Pop'])
+restTotalPop = np.sum(rest['Total Pop'])
+
+# closeCasePer100 = 1e5*np.nansum(close.filter(like='wk_'), axis=0)/closeTotalPop
+# farCasePer100 = 1e5*np.nansum(far.filter(like='wk_'), axis=0)/farTotalPop
+filterSpec='wk_*|latest_7_days(?!_)'
+#filterSpec = 'wk_*'
+
+closeCasePer100 = np.nanmean(1e5 * close.filter(regex=filterSpec).div(close['Total Pop'], axis=0), axis=0)
+farCasePer100 = np.nanmean(1e5 * far.filter(regex=filterSpec).div(far['Total Pop'], axis=0), axis=0)
+restCasePer100 = np.nanmean(1e5 * rest.filter(regex=filterSpec).div(rest['Total Pop'], axis=0), axis=0)
+
+# closeCasePer100 = np.nansum(close.filter(regex='wk_*'), axis=0)
+# farCasePer100 = np.nansum(far.filter(regex='wk_*'), axis=0)
+
+numberClose = len(close)
+numberFar = len(far)
+
+first = datetime.datetime.fromisocalendar(2020, 5, 7)
+last  = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5, 7)
+date_range = mdates.drange(first,last,datetime.timedelta(days=7))
+
+fig = plt.figure(figsize=(8,5),dpi=100)
+ax = fig.add_subplot(1, 1, 1)
+
+
+ax.plot(date_range,closeCasePer100, linewidth=3)
+ax.plot(date_range,farCasePer100, linewidth=3)
+ax.plot(date_range,restCasePer100, linewidth=3)
+
+
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
+ax.xaxis.set_major_locator(mdates.DayLocator(bymonthday=1))
+
+# Hide the right and top spines
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+#ax.spines['bottom'].set_position('zero')
+
+# Only show ticks on the left and bottom spines
+ax.yaxis.set_ticks_position('left')
+ax.xaxis.set_ticks_position('bottom')
+ax.xaxis.set_tick_params(width=2,length=8)
+plt.ylabel('Cases per 100k population',fontsize=12)
+#plt.yscale("log")
+#plt.ylim(1,10e3)
+plt.xlim([datetime.date(2020, 7, 1), date_range[-1]+4])
+
+shadeFrom = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1, 1)
+shadeTo   = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1+1, 2)
+
+ax.fill_between( (shadeFrom,shadeTo),ax.get_ylim()[0],ax.get_ylim()[1], alpha=0.15)
+
+# "You scored {:.0%}"
+# '{} areas where students are {:.0%} of pop.'.format(numberClose,thresh)
+# plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,popThresh),
+#             '{} areas with students less than {:.0%} of pop.'.format(numberFar,popThresh)],
+#            fontsize=12)
+
+plt.legend(['{} areas within {} mile of Oxbridge\n and students over {:.0%} of population'.format(numberClose,distThresh, popThresh),
+            '{} areas within {} mile of Oxbridge\n and students below {:.0%} of population'.format(numberFar,distThresh, popThresh),
+            '{} areas outside of Oxbridge'.format(len(rest))],
+            fontsize=12)
+
+
+# plt.title('Cases Per 100k in Univ')
+plt.gcf().autofmt_xdate()
+plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood',
+             (0,0), (-20, -50), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+plt.annotate('Latest Week Provisional\nsubject to revision.',
+             (.8,.1), (0, 0), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+
+plt.show()
+
+
+
+# %% Separate near and far regions and group by university.
+
+###
+
+popThresh = 0
+distThreshNear = 2
+distThreshFar  = 5
+####
+
+#Which attributes to select data by.
+#classifyBy = 'Density (number of persons per hectare)'
+classifyBy = 'Student Percentage'
+uniGroup   = 'rg_distance'
+
+# close = merged.loc[merged['uni_distance'] < distThresh, :]
+# far = merged.loc[merged['uni_distance'] >= distThresh, :]
+#Select specific Uni
+# selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
+
+close = merged.loc[(merged[uniGroup] <= distThreshNear)  , :]
+far = merged.loc[ (merged[uniGroup] > distThreshNear) & (merged[uniGroup] < distThreshFar), :]
+
+close = close.groupby('uni_name').sum()
+far = far.groupby('uni_name').sum()
 
 # nNear = 400;
 # close = merged.iloc[1:nNear,:]
@@ -232,48 +603,68 @@ closeTotalPop = np.sum(close['Total Pop'])
 farTotalPop = np.sum(far['Total Pop'])
 # closeCasePer100 = 1e5*np.nansum(close.filter(like='wk_'), axis=0)/closeTotalPop
 # farCasePer100 = 1e5*np.nansum(far.filter(like='wk_'), axis=0)/farTotalPop
+filterSpec = 'wk_*|latest_7_days(?!_)'
+#filterSpec = 'wk_*'
 
-closeCasePer100 = np.nanmean(1e5 * close.filter(regex='wk_*|latest_7_days(?!_)').div(close['Total Pop'], axis=0), axis=0)
-farCasePer100 = np.nanmean(1e5 * far.filter(regex='wk_*|latest_7_days(?!_)').div(far['Total Pop'], axis=0), axis=0)
+#closeCasePer100 = np.nanmean(1e5 * close.filter(regex='wk_*|latest_7_days(?!_)').div(close['Total Pop'], axis=0), axis=0)
+closeCasePer100 = 1e5 * close.filter(regex=filterSpec).div(close['Total Pop'], axis=0)
+closeCasePer100 = closeCasePer100.transpose(copy=True)
+farCasePer100 = 1e5 * far.filter(regex=filterSpec).div(far['Total Pop'], axis=0)
+farCasePer100 = farCasePer100.transpose(copy=True)
 
-numberClose = len(close)
-numberFar = len(far)
+# closeCasePer100 = np.nanmean(1e5 * close.filter(regex='wk_*').div(close['Total Pop'], axis=0), axis=0)
+# farCasePer100 = np.nanmean(1e5 * far.filter(regex='wk_*').div(far['Total Pop'], axis=0), axis=0)
 
-first = datetime.datetime.fromisocalendar(2020, 5, 5)
-last  = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)-1+5, 6)
+# closeCasePer100 = np.nansum(close.filter(regex='wk_*'), axis=0)
+# farCasePer100 = np.nansum(far.filter(regex='wk_*'), axis=0)
+
+
+numberClose = close.shape[0]
+numberFar = far.shape[0]
+
+numberWeeks = closeCasePer100.shape[0]
+first = datetime.datetime.fromisocalendar(2020, 5, 7)
+last  = datetime.datetime.fromisocalendar(2020, numberWeeks+5, 7)
 date_range = mdates.drange(first,last,datetime.timedelta(days=7))
 
-fig = plt.figure(figsize=(7,5),dpi=100)
+fig = plt.figure(figsize=(8,5),dpi=100)
 ax = fig.add_subplot(1, 1, 1)
 
+ax.plot(date_range,closeCasePer100, linewidth=3,color='blue')
+ax.plot(date_range,farCasePer100, linewidth=3,color='orange')
 
-ax.plot(date_range,closeCasePer100, linewidth=3)
-ax.plot(date_range,farCasePer100, linewidth=3)
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
 ax.xaxis.set_major_locator(mdates.DayLocator(bymonthday=1))
 
 # Hide the right and top spines
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
-ax.spines['bottom'].set_position('zero')
+#ax.spines['bottom'].set_position('zero')
 
 # Only show ticks on the left and bottom spines
 ax.yaxis.set_ticks_position('left')
 ax.xaxis.set_ticks_position('bottom')
 ax.xaxis.set_tick_params(width=2,length=8)
 plt.ylabel('Cases per 100k population',fontsize=12)
-
+#plt.yscale("log")
+#plt.ylim(1,10e3)
+plt.xlim([datetime.date(2020, 7, 1), datetime.date(2020, 10, 15)])
 # "You scored {:.0%}"
 # '{} areas where students are {:.0%} of pop.'.format(numberClose,thresh)
-plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,thresh),
-            '{} areas with students less than {:.0%} of pop.'.format(numberFar,thresh)],
+# plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,thresh),
+#             '{} areas with students less than {:.0%} of pop.'.format(numberFar,thresh)],
+#            fontsize=12)
+plt.legend(['{} areas within {} miles of Russell Group university'.format(numberClose,distThreshNear),
+            '{} areas more than {} miles of Russell Group university\n but less than {} miles'.format(numberFar,distThreshNear, distThreshFar)],
            fontsize=12)
+
 # plt.title('Cases Per 100k in Univ')
 plt.gcf().autofmt_xdate()
 plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood',
-             (0,0), (-20, -40), xycoords='axes fraction',
+             (0,0), (-20, -50), xycoords='axes fraction',
              textcoords='offset points', va='top',
              fontsize=8)
+
 plt.show()
 
 # %% [markdown]
@@ -296,7 +687,31 @@ plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/
              textcoords='offset points', va='top',
              fontsize=8)
 plt.show()
+# %% Make a scatter plot of population density
 
+merged = merged.sort_values('latest_7_days', ascending=False)
+
+#targetWeek = 'Student Percentage'
+targetWeek = 'latest_7_days'
+#targetX    ='Density (number of persons per hectare)'
+targetX    ='56302 : Public houses and bars'
+tmp = merged
+
+plt.scatter(tmp[targetX], 1e5 * tmp[targetWeek].div(tmp['Total Pop'], axis=0), s=4)
+#plt.scatter(1e5 * tmp[targetX].div(tmp['Total Pop'], axis=0), 1e5 * tmp[targetWeek].div(tmp['Total Pop'], axis=0), s=4)
+#plt.scatter(tmp[targetX], tmp[targetWeek], s=4)
+
+#plt.ylabel(targetWeek)
+#plt.ylabel(targetWeek)
+plt.xlabel('Number Pub Employees')
+plt.ylabel('Cases per 100k pop.')
+
+plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood',
+             (0,0), (-20, -40), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
+plt.xlim(-10,500)
+plt.show()
 # %%
 
 
