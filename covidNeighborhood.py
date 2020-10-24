@@ -166,11 +166,14 @@ closestRgIdx = np.nanargmin(tmp, axis=1)
 
 uni_name = HE_centroids['PROVIDER_NAME'].iloc[closestUniIdx].values
 rg_name  = HE_centroids['PROVIDER_NAME'].iloc[closestRgIdx].values
+groups   = HE_centroids['GROUPS'].iloc[closestUniIdx].values
 MSOA_centroids.insert(1, "uni_distance", uni_distance)
 MSOA_centroids.insert(1, "rg_distance", rg_distance)
 MSOA_centroids.insert(1, "mp_distance", mp_distance)
 MSOA_centroids.insert(1, "uni_name", uni_name)
 MSOA_centroids.insert(1, "rg_name", rg_name)
+MSOA_centroids.insert(1, "GROUPS", groups)
+
 
 
 
@@ -463,7 +466,7 @@ plt.show()
 ###
 
 popThresh = .25
-distThresh = 5
+distThresh = 2.5
 ####
 
 #Which attributes to select data by.
@@ -479,7 +482,7 @@ uniGroup   = 'rg_distance'
 #selectTheseUni = np.full(merged.shape[0], True)
 selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
 
-close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
+close = merged.loc[( [classifyBy] >= popThreshmerged) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
 rest = merged.loc[~selectTheseUni, :]
 
@@ -570,7 +573,7 @@ plt.show()
 
 
 
-# %% Separate near and far regions and group by university.
+# %% Separate lines for each university.
 
 ###
 
@@ -582,15 +585,18 @@ distThreshFar  = 5
 #Which attributes to select data by.
 #classifyBy = 'Density (number of persons per hectare)'
 classifyBy = 'Student Percentage'
-uniGroup   = 'rg_distance'
+uniGroup   = 'uni_distance'
+
+rg_idx = (merged['GROUPS'].str.contains('Russell_Group') == True)
+#rg_idx = np.full(merged.shape[0], True)
 
 # close = merged.loc[merged['uni_distance'] < distThresh, :]
 # far = merged.loc[merged['uni_distance'] >= distThresh, :]
 #Select specific Uni
 # selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
 
-close = merged.loc[(merged[uniGroup] <= distThreshNear)  , :]
-far = merged.loc[ (merged[uniGroup] > distThreshNear) & (merged[uniGroup] < distThreshFar), :]
+close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] <= distThreshNear) & rg_idx  , :]
+far = merged.loc[ ( merged[classifyBy] < popThresh) & (merged[uniGroup] > distThreshNear) & (merged[uniGroup] < distThreshFar) & rg_idx, :]
 
 close = close.groupby('uni_name').sum()
 far = far.groupby('uni_name').sum()
@@ -615,7 +621,9 @@ farCasePer100 = farCasePer100.transpose(copy=True)
 # closeCasePer100 = np.nanmean(1e5 * close.filter(regex='wk_*').div(close['Total Pop'], axis=0), axis=0)
 # farCasePer100 = np.nanmean(1e5 * far.filter(regex='wk_*').div(far['Total Pop'], axis=0), axis=0)
 
-# closeCasePer100 = np.nansum(close.filter(regex='wk_*'), axis=0)
+# closeCasePer100 = close.filter(regex=filterSpec)
+# closeCasePer100 = closeCasePer100.transpose(copy=True)
+
 # farCasePer100 = np.nansum(far.filter(regex='wk_*'), axis=0)
 
 
@@ -630,8 +638,8 @@ date_range = mdates.drange(first,last,datetime.timedelta(days=7))
 fig = plt.figure(figsize=(8,5),dpi=100)
 ax = fig.add_subplot(1, 1, 1)
 
-ax.plot(date_range,closeCasePer100, linewidth=3,color='blue')
-ax.plot(date_range,farCasePer100, linewidth=3,color='orange')
+ax.plot(date_range,closeCasePer100, linewidth=1,color='blue',alpha=.5)
+#ax.plot(date_range,farCasePer100, linewidth=3,color='orange')
 
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
 ax.xaxis.set_major_locator(mdates.DayLocator(bymonthday=1))
@@ -648,14 +656,17 @@ ax.xaxis.set_tick_params(width=2,length=8)
 plt.ylabel('Cases per 100k population',fontsize=12)
 #plt.yscale("log")
 #plt.ylim(1,10e3)
-plt.xlim([datetime.date(2020, 7, 1), datetime.date(2020, 10, 15)])
+plt.xlim([datetime.date(2020, 7, 1), datetime.date(2020, 10, 21)])
 # "You scored {:.0%}"
 # '{} areas where students are {:.0%} of pop.'.format(numberClose,thresh)
 # plt.legend(['{} areas with students {:.0%}+ of pop.'.format(numberClose,thresh),
 #             '{} areas with students less than {:.0%} of pop.'.format(numberFar,thresh)],
 #            fontsize=12)
-plt.legend(['{} areas within {} miles of Russell Group university'.format(numberClose,distThreshNear),
-            '{} areas more than {} miles of Russell Group university\n but less than {} miles'.format(numberFar,distThreshNear, distThreshFar)],
+# plt.legend(['{} areas within {} miles of Russell Group university'.format(numberClose,distThreshNear),
+#             '{} areas more than {} miles of Russell Group university\n but less than {} miles'.format(numberFar,distThreshNear, distThreshFar)],
+#            fontsize=12)
+
+plt.legend(['Aggregated areas within {} miles of Russell Group university\ngrouped by university'.format(distThreshNear)],
            fontsize=12)
 
 # plt.title('Cases Per 100k in Univ')
@@ -665,13 +676,21 @@ plt.annotate('Created by Justin Ales, code available: https://github.com/j-ales/
              textcoords='offset points', va='top',
              fontsize=8)
 
+shadeFrom = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1, 3)
+shadeTo   = datetime.datetime.fromisocalendar(2020, len(closeCasePer100)+5-1+1, 2)
+
+ax.fill_between( (shadeFrom,shadeTo),ax.get_ylim()[0],ax.get_ylim()[1], alpha=0.15)
+plt.annotate('Latest Week Provisional\nsubject to revision.',
+             (.8,.08), (0, 0), xycoords='axes fraction',
+             textcoords='offset points', va='top',
+             fontsize=8)
 plt.show()
 
 # %% [markdown]
 # ## Scatter plot
 # This code will make a scatter plot.  You can change what to compare.
 
-# %% Make a scatter plot
+# %% Make a scatter plot of cases/100k by student population
 
 merged = merged.sort_values('latest_7_days', ascending=False)
 

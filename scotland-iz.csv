@@ -1,0 +1,1280 @@
+﻿_id,IntZone,IntZoneName,CA,CAName,HSCP,HSCPName,HB,HBName,Country
+1,S02001236,Culter,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+2,S02001237,"Cults, Bieldside and Milltimber West",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+3,S02001238,"Cults, Bieldside and Milltimber East",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+4,S02001239,Garthdee,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+5,S02001240,"Braeside, Mannofield, Broomhill and Seafield East",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+6,S02001241,"Braeside, Mannofield, Broomhill and Seafield South",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+7,S02001242,"Braeside, Mannofield, Broomhill and Seafield North",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+8,S02001243,Hazlehead,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+9,S02001244,Summerhill,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+10,S02001245,Midstocket,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+11,S02001246,Rosemount,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+12,S02001247,West End North,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+13,S02001248,West End South,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+14,S02001249,City Centre West,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+15,S02001250,City Centre East,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+16,S02001251,Ferryhill North,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+17,S02001252,Ferryhill South,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+18,S02001253,"Kincorth, Leggart and Nigg North",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+19,S02001254,"Kincorth, Leggart and Nigg South",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+20,S02001255,Cove South,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+21,S02001256,Cove North,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+22,S02001257,Torry West,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+23,S02001258,Torry East,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+24,S02001259,Hanover South,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+25,S02001260,Hanover North,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+26,S02001261,George Street,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+27,S02001262,Ashgrove,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+28,S02001263,"Froghall, Powis and Sunnybank",S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+29,S02001264,Seaton,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+30,S02001265,Old Aberdeen,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+31,S02001266,Tillydrone,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+32,S02001267,Woodside,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+33,S02001268,Hilton,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+34,S02001269,Stockethill,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+35,S02001270,Mastrick,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+36,S02001271,Sheddocksley,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+37,S02001272,Cummings Park,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+38,S02001273,Northfield,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+39,S02001274,Heathryfold and Middlefield,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+40,S02001275,Kingswells,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+41,S02001276,Bucksburn South,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+42,S02001277,Bucksburn North,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+43,S02001278,Dyce,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+44,S02001279,Danestone,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+45,S02001280,Oldmachar West,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+46,S02001281,Oldmachar East,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+47,S02001282,Balgownie and Donmouth West,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+48,S02001283,Balgownie and Donmouth East,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+49,S02001284,Denmore,S12000033,Aberdeen City,S37000001,Aberdeen City,S08000020,NHS Grampian,S92000003
+50,S02001285,East Cairngorms,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+51,S02001286,Aboyne and South Deeside,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+52,S02001287,Mearns and Laurencekirk,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+53,S02001288,Mearns South and Benholm,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+54,S02001289,Mearns North and Inverbervie,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+55,S02001290,"Fetteresso, Netherley and Catter",S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+56,S02001291,Stonehaven South,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+57,S02001292,Stonehaven North,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+58,S02001293,Newtonhill,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+59,S02001294,Portlethen,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+60,S02001295,Banchory-Devenick and Findon,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+61,S02001296,"Dunecht, Durris and Drumoak",S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+62,S02001297,Banchory East,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+63,S02001298,Banchory West,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+64,S02001299,Crathes and Torphins,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+65,S02001300,Cromar and Kildrummy,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+66,S02001301,Howe of Alford,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+67,S02001302,Kemnay,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+68,S02001303,Inverurie North,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+69,S02001304,Inverurie South,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+70,S02001305,Durno-Chapel of Garioch,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+71,S02001306,Kintore,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+72,S02001307,Blackburn,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+73,S02001308,Westhill North and South,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+74,S02001309,Westhill Central,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+75,S02001310,Garlogie and Elrick,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+76,S02001311,Newmachar and Fintray,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+77,S02001312,Balmedie and Potterton,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+78,S02001313,Ellon East,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+79,S02001314,Ellon West,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+80,S02001315,Ythanside,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+81,S02001316,Ythsie,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+82,S02001317,Barrahill,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+83,S02001318,Fyvie-Rothie,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+84,S02001319,"Insch, Oyne and Ythanwells",S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+85,S02001320,Clashindarroch,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+86,S02001321,Huntly,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+87,S02001322,Auchterless and Monquhitter,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+88,S02001323,Turriff,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+89,S02001324,"Portsoy, Fordyce and Cornhill",S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+90,S02001325,Aberchirder and Whitehills,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+91,S02001326,Banff,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+92,S02001327,Macduff,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+93,S02001328,Gardenstown and King Edward,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+94,S02001329,New Pitsligo,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+95,S02001330,Deer and Mormond,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+96,S02001331,Mintlaw,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+97,S02001332,Auchnagatt,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+98,S02001333,Cruden,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+99,S02001334,Peterhead Links,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+100,S02001335,Peterhead Bay,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+101,S02001336,Peterhead Harbour,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+102,S02001337,Peterhead Ugieside,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+103,S02001338,Longside and Rattray,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+104,S02001339,Rosehearty and Strathbeg,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+105,S02001340,Fraserburgh Smiddyhill,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+106,S02001341,Fraserburgh Lochpots,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+107,S02001342,Fraserburgh Central-Academy,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+108,S02001343,Fraserburgh Harbour and Broadsea,S12000034,Aberdeenshire,S37000002,Aberdeenshire,S08000020,NHS Grampian,S92000003
+109,S02001344,South Angus,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+110,S02001345,Monikie,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+111,S02001346,Monifieth West,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+112,S02001347,Monifieth East,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+113,S02001348,Carnoustie West,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+114,S02001349,Carnoustie East,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+115,S02001350,Arbroath Landward,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+116,S02001351,Arbroath Kirkton,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+117,S02001352,Arbroath Keptie,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+118,S02001353,Arbroath Harbour,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+119,S02001354,Arbroath Cliffburn,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+120,S02001355,Arbroath Warddykes,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+121,S02001356,Lunan,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+122,S02001357,Montrose South,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+123,S02001358,Montrose North,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+124,S02001359,Hillside,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+125,S02001360,Friockheim,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+126,S02001361,Brechin East,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+127,S02001362,Brechin West,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+128,S02001363,Letham and Glamis,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+129,S02001364,Forfar East,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+130,S02001365,Forfar Central,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+131,S02001366,Forfar West,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+132,S02001367,Kirriemuir Landward,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+133,S02001368,Kirriemuir,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+134,S02001369,Angus Glens,S12000041,Angus,S37000003,Angus,S08000030,NHS Tayside,S92000003
+135,S02001370,"Mull, Iona, Coll and Tiree",S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+136,S02001371,Oban South,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+137,S02001372,Oban North,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+138,S02001373,Benderloch Trail,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+139,S02001374,Loch Awe,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+140,S02001375,Mid Argyll,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+141,S02001376,Greater Lochgilphead,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+142,S02001377,Knapdale,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+143,S02001378,Whisky Isles,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+144,S02001379,Kintyre Trail,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+145,S02001380,Campbeltown,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+146,S02001381,Bute,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+147,S02001382,Rothesay Town,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+148,S02001383,Cowal South,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+149,S02001384,Cowal North,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+150,S02001385,Hunter's Quay,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+151,S02001386,Dunoon,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+152,S02001387,Garelochhead,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+153,S02001388,Helensburgh West and Rhu,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+154,S02001389,Helensburgh North,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+155,S02001390,Helensburgh Centre,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+156,S02001391,Helensburgh East,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+157,S02001392,Lomond Shore,S12000035,Argyll & Bute,S37000004,Argyll and Bute,S08000022,NHS Highland,S92000003
+158,S02001393,Tullibody South,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+159,S02001394,Tullibody North and Glenochil,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+160,S02001395,Menstrie,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+161,S02001396,Alva,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+162,S02001397,"Fishcross, Devon Village and Coalsnaughton",S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+163,S02001398,Tillicoultry,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+164,S02001399,Dollar and Muckhart,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+165,S02001400,"Clackmannan, Kennet and Forestmill",S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+166,S02001401,Sauchie,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+167,S02001402,Alloa South and East,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+168,S02001403,Alloa North,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+169,S02001404,Alloa West,S12000005,Clackmannanshire,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+170,S02001405,Stranraer West,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+171,S02001406,Stranraer East,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+172,S02001407,Stranraer South,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+173,S02001408,Rhins North,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+174,S02001409,Rhins South,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+175,S02001410,Machars North,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+176,S02001411,Machars South,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+177,S02001412,Newton Stewart,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+178,S02001413,Gatehouse,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+179,S02001414,Kirkcudbright,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+180,S02001415,Castle Douglas,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+181,S02001416,Dalbeattie,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+182,S02001417,Dalbeattie Rural,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+183,S02001418,Glenkens,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+184,S02001419,Upper Nithsdale,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+185,S02001420,Thornhill,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+186,S02001421,Mid Nithsdale,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+187,S02001422,Shawhead,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+188,S02001423,Lochside and Lincluden,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+189,S02001424,Summerville,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+190,S02001425,Troqueer,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+191,S02001426,New Abbey,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+192,S02001427,Kingholm,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+193,S02001428,Calside,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+194,S02001429,Georgetown,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+195,S02001430,Dumfries Central,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+196,S02001431,Nunholm,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+197,S02001432,Locharbriggs,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+198,S02001433,Heathhall,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+199,S02001434,Collin,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+200,S02001435,Lochmaben,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+201,S02001436,Lockerbie,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+202,S02001437,Moffat,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+203,S02001438,Langholm and Eskdale,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+204,S02001439,Annandale East,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+205,S02001440,Annandale West,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+206,S02001441,Annan West,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+207,S02001442,Annan East,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+208,S02001443,Eastriggs,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+209,S02001444,Gretna,S12000006,Dumfries & Galloway,S37000006,Dumfries and Galloway,S08000017,NHS Dumfries and Galloway,S92000003
+210,S02001445,Westend,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+211,S02001446,Perth Road,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+212,S02001447,Logie and Blackness,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+213,S02001448,City Centre,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+214,S02001449,Docks and Wellgate,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+215,S02001450,Hilltown,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+216,S02001451,The Glens,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+217,S02001452,Stobswell,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+218,S02001453,Baxter Park,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+219,S02001454,Craigie and  Craigiebank,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+220,S02001455,Douglas West,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+221,S02001456,West Ferry,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+222,S02001457,Douglas East,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+223,S02001458,Broughty Ferry West,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+224,S02001459,Broughty Ferry East,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+225,S02001460,Barnhill,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+226,S02001461,West Pitkerro,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+227,S02001462,Whitfield,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+228,S02001463,Fintry,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+229,S02001464,Linlathen and Midcraigie,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+230,S02001465,Caird Park,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+231,S02001466,Kirkton,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+232,S02001467,Downfield,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+233,S02001468,Fairmuir,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+234,S02001469,Law,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+235,S02001470,Balgay,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+236,S02001471,Menzieshill,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+237,S02001472,Charleston,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+238,S02001473,Lochee,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+239,S02001474,Ardler and St Marys,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+240,S02001475,Western Edge,S12000042,Dundee City,S37000007,Dundee City,S08000030,NHS Tayside,S92000003
+241,S02001476,Doon Valley South,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+242,S02001477,Doon Valley North,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+243,S02001478,Mauchline Rural,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+244,S02001479,Drongan,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+245,S02001480,Mauchline,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+246,S02001481,Cumnock Rural,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+247,S02001482,New Cumnock,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+248,S02001483,Cumnock South and Craigens,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+249,S02001484,Cumnock North,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+250,S02001485,Auchinleck,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+251,S02001486,Northern and Irvine Valley Rural,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+252,S02001487,Stewarton East,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+253,S02001488,Stewarton West,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+254,S02001489,Darvel,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+255,S02001490,Newmilns,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+256,S02001491,Galston,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+257,S02001492,Earlston and Hurlford Rural,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+258,S02001493,Shortlees,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+259,S02001494,Bellfield and Kirkstyle,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+260,S02001495,Kilmarnock South Central and Caprington,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+261,S02001496,Piersland,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+262,S02001497,New Farm Loch South,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+263,S02001498,Dean and New Farm Loch North,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+264,S02001499,Southcraig and Beansburn,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+265,S02001500,Altonhill North and Onthank,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+266,S02001501,"Altonhill South, Longpark and Hillhead",S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+267,S02001502,Bonnyton and Town Centre,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+268,S02001503,"Grange, Howard and Gargieston",S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+269,S02001504,"Crosshouse, Gatehead and Kilmaurs Rural",S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+270,S02001505,Kilmaurs,S12000008,East Ayrshire,S37000008,East Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+271,S02001506,West Clober and Mains Estate,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+272,S02001507,East Clober and Mains Estate,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+273,S02001508,Barloch,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+274,S02001509,Keystone and Dougalston,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+275,S02001510,Kilmardinny East,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+276,S02001511,Kilmardinny West,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+277,S02001512,North Castlehill and Thorn,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+278,S02001513,South Castlehill and Thorn,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+279,S02001514,Westerton West,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+280,S02001515,Westerton East,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+281,S02001516,Kessington West,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+282,S02001517,Kessington East,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+283,S02001518,Torrance and Balmore,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+284,S02001519,Bishopbriggs North and Kenmure,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+285,S02001520,Bishopbriggs West and Cadder,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+286,S02001521,Auchinairn,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+287,S02001522,Woodhill East,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+288,S02001523,Woodhill West,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+289,S02001524,Lenzie North,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+290,S02001525,Lenzie South,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+291,S02001526,Kirkintilloch South,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+292,S02001527,Kirkintilloch West,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+293,S02001528,Hillhead,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+294,S02001529,Rosebank and Waterside,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+295,S02001530,Twechar and Harestanes East,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+296,S02001531,Harestanes,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+297,S02001532,Milton of Campsie,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+298,S02001533,Lennoxtown,S12000045,East Dunbartonshire,S37000009,East Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+299,S02001534,IZ01,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+300,S02001535,IZ02,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+301,S02001536,IZ03,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+302,S02001537,IZ04,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+303,S02001538,IZ05,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+304,S02001539,IZ06,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+305,S02001540,IZ07,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+306,S02001541,IZ08,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+307,S02001542,IZ09,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+308,S02001543,IZ10,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+309,S02001544,IZ11,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+310,S02001545,IZ12,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+311,S02001546,IZ13,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+312,S02001547,IZ14,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+313,S02001548,IZ15,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+314,S02001549,IZ16,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+315,S02001550,IZ17,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+316,S02001551,IZ18,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+317,S02001552,IZ19,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+318,S02001553,IZ20,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+319,S02001554,IZ21,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+320,S02001555,IZ22,S12000010,East Lothian,S37000010,East Lothian,S08000024,NHS Lothian,S92000003
+321,S02001556,Neilston and Uplawmoor,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+322,S02001557,Cross Stobbs,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+323,S02001558,"Dunterlie, East Arthurlie and Dovecothall",S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+324,S02001559,Arthurlie and Gateside,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+325,S02001560,Auchenback,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+326,S02001561,Crookfur and Fruin,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+327,S02001562,"Mearns Village, Westacres and Greenfarm",S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+328,S02001563,Whitecraigs and Broom,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+329,S02001564,Mearnskirk and South Kirkhill,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+330,S02001565,Eaglesham and Waterfoot,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+331,S02001566,North Kirkhill,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+332,S02001567,Busby,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+333,S02001568,Clarkston and Sheddens,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+334,S02001569,Williamwood,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+335,S02001570,Stamperland,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+336,S02001571,Netherlee,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+337,S02001572,Merrylee and Braidbar,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+338,S02001573,Lower Whitecraigs and South Giffnock,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+339,S02001574,North Giffnock and North Thornliebank,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+340,S02001575,South Thornliebank and Woodfarm,S12000011,East Renfrewshire,S37000011,East Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+341,S02001576,Balerno and Bonnington Village,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+342,S02001577,Currie West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+343,S02001578,Currie East,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+344,S02001579,Baberton and Juniper Green,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+345,S02001580,Bonaly and The Pentlands,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+346,S02001581,Colinton and Kingsknowe,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+347,S02001582,Clovenstone and Wester Hailes,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+348,S02001583,The Calders,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+349,S02001584,Murrayburn and Wester Hailes North,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+350,S02001585,Parkhead and Sighthill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+351,S02001586,Broomhouse and Bankhead,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+352,S02001587,Stenhouse and Saughton Mains,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+353,S02001588,Longstone and Saughton,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+354,S02001589,Slateford and Chesser,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+355,S02001590,Gorgie West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+356,S02001591,Gorgie East,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+357,S02001592,Shandon,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+358,S02001593,Craiglockhart,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+359,S02001594,Morningside and Craighouse,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+360,S02001595,Greenbank and The Braids,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+361,S02001596,Colinton Mains and Firrhill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+362,S02001597,Oxgangs,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+363,S02001598,Comiston and Swanston,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+364,S02001599,Fairmilehead,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+365,S02001600,Gilmerton South and the Murrays,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+366,S02001601,Mortonhall and Anwickhill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+367,S02001602,"Gracemount, Southhouse and Burdiehouse",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+368,S02001603,Hyvots and Gilmerton,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+369,S02001604,Fernieside and Moredun South,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+370,S02001605,Moredun and Craigour,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+371,S02001606,Liberton East,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+372,S02001607,Liberton West and Braid Hills,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+373,S02001608,The Inch,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+374,S02001609,"Blackford, West Mains and Mayfield Road",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+375,S02001610,Prestonfield,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+376,S02001611,Newington and Dalkeith Road,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+377,S02001612,The Grange,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+378,S02001613,Marchmont East and Sciennes,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+379,S02001614,Marchmont West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+380,S02001615,Morningside,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+381,S02001616,Merchiston and Greenhill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+382,S02001617,Bruntsfield,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+383,S02001618,Polwarth,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+384,S02001619,Dalry and Fountainbridge,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+385,S02001620,Tollcross,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+386,S02001621,Meadows and Southside,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+387,S02001622,"Old Town, Princes Street and Leith Street",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+388,S02001623,"Canongate, Southside and Dumbiedykes",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+389,S02001624,Abbeyhill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+390,S02001625,Meadowbank and Abbeyhill North,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+391,S02001626,Willowbrae and Duddingston Village,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+392,S02001627,Craigmillar,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+393,S02001628,Niddrie,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+394,S02001629,"Bingham, Magdalene and The Christians",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+395,S02001630,"Jewel, Brunstane and Newcraighall",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+396,S02001631,Joppa,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+397,S02001632,Portobello,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+398,S02001633,Duddingston and Portobello South,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+399,S02001634,Mountcastle,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+400,S02001635,Northfield and Piershill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+401,S02001636,Craigentinny,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+402,S02001637,Restalrig (Loganlea) and Craigentinny West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+403,S02001638,Restalrig and Lochend,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+404,S02001639,Leith (Hermitage and Prospect Bank),S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+405,S02001640,Western Harbour and Leith Docks,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+406,S02001641,North Leith and Newhaven,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+407,S02001642,The Shore and Constitution Street,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+408,S02001643,Great Junction Street,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+409,S02001644,South Leith,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+410,S02001645,Easter Road and Hawkhill Avenue,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+411,S02001646,Leith (Albert Street),S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+412,S02001647,Hillside and Calton Hill,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+413,S02001648,Pilrig,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+414,S02001649,Bonnington,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+415,S02001650,Trinity East and The Dudleys,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+416,S02001651,Trinity,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+417,S02001652,"Inverleith, Goldenacre and Warriston",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+418,S02001653,Broughton North and Powderhall,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+419,S02001654,Broughton South,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+420,S02001655,New Town East and Gayfield,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+421,S02001656,New Town West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+422,S02001657,Canonmills and New Town North,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+423,S02001658,Stockbridge,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+424,S02001659,Comely Bank,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+425,S02001660,Deans Village,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+426,S02001661,Balgreen and Roseburn,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+427,S02001662,Murrayfield and Ravelston,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+428,S02001663,"Craigleith, Orchard Brae and Crewe Toll",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+429,S02001664,Blackhall,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+430,S02001665,Drylaw,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+431,S02001666,West Pilton,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+432,S02001667,Boswall and Pilton,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+433,S02001668,Granton South and Wardieburn,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+434,S02001669,Granton and Royston Mains,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+435,S02001670,Granton West and Salvesen,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+436,S02001671,Muirhouse,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+437,S02001672,Silverknowes and Davidson's Mains,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+438,S02001673,Cramond,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+439,S02001674,"Barnton, Cammo and Cramond South",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+440,S02001675,Clermiston and Drumbrae,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+441,S02001676,East Craigs North,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+442,S02001677,East Craigs South,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+443,S02001678,Corstorphine North,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+444,S02001679,Corstorphine,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+445,S02001680,Carrick Knowe,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+446,S02001681,Corstorphine South,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+447,S02001682,South Gyle,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+448,S02001683,"Ratho, Ingliston and Gogar",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+449,S02001684,"Dalmeny, Kirkliston and Newbridge",S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+450,S02001685,Queensferry East,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+451,S02001686,Queensferry West,S12000036,City of Edinburgh,S37000012,Edinburgh,S08000024,NHS Lothian,S92000003
+452,S02001687,Barra and South Uist,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+453,S02001688,Benbecula and North Uist,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+454,S02001689,Harris,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+455,S02001690,South Lewis,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+456,S02001691,Northwest Lewis,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+457,S02001692,Broadbay,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+458,S02001693,Stornoway West,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+459,S02001694,Stornoway East,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+460,S02001695,Point,S12000013,Na h-Eileanan Siar,S37000031,Western Isles,S08000028,NHS Western Isles,S92000003
+461,S02001696,Dunipace,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+462,S02001697,"Fankerton, Stoneywood and Denny Town",S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+463,S02001698,Denny - Nethermains,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+464,S02001699,Head of Muir and Dennyloanhead,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+465,S02001700,"Banknock, Haggs and Longcroft",S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+466,S02001701,Bonnybridge,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+467,S02001702,High Bonnybridge and Greenhill,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+468,S02001703,Larbert - North Broomage and Inches,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+469,S02001704,Larbert - South Broomage and Village,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+470,S02001705,Stenhousemuir West,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+471,S02001706,Stenhousemuir East,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+472,S02001707,Stenhousemuir - Antonshill,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+473,S02001708,Carron,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+474,S02001709,Carronshore,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+475,S02001710,Carse and Grangemouth Old Town,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+476,S02001711,Falkirk - Bainsford and Langlees,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+477,S02001712,Falkirk - Merchiston and New Carron Village,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+478,S02001713,Falkirk - Grahamston,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+479,S02001714,Falkirk - Middlefield,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+480,S02001715,Falkirk - Town Centre and Callendar Park,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+481,S02001716,Falkirk - Bantaskin,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+482,S02001717,Falkirk - Camelon East,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+483,S02001718,Falkirk - Camelon West,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+484,S02001719,Falkirk - Tamfourhill,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+485,S02001720,Falkirk - Lochgreen and Lionthorn,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+486,S02001721,Hallglen and Glen Village,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+487,S02001722,Shieldhill,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+488,S02001723,Braes Villages,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+489,S02001724,Reddingmuirhead and Overton,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+490,S02001725,Brightons and Wallacestone,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+491,S02001726,Maddiston and Rumford,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+492,S02001727,Polmont,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+493,S02001728,Redding,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+494,S02001729,Laurieston and Westquarter,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+495,S02001730,Grangemouth - Newlands,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+496,S02001731,Grangemouth - Town Centre,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+497,S02001732,Grangemouth - Kersiebank,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+498,S02001733,Grangemouth - Bowhouse,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+499,S02001734,Bo'ness - Douglas,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+500,S02001735,Bo'ness - Newtown,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+501,S02001736,Bo'ness - Kinneil,S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+502,S02001737,"Blackness, Bo'ness - Carriden and Grahamsdyke",S12000014,Falkirk,S37000013,Falkirk,S08000019,NHS Forth Valley,S92000003
+503,S02001738,Kincardine,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+504,S02001739,Oakley Comrie and Blairhall,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+505,S02001740,Saline and Gowkhall,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+506,S02001741,Valleyfield Culross and Torryburn,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+507,S02001742,Cairneyhill and Crombie,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+508,S02001743,Crossford Charlestown and Limekilns,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+509,S02001744,Dunfermline Milesmark and Wellwood,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+510,S02001745,Dunfermline Baldridgeburn,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+511,S02001746,Dunfermline Headwell,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+512,S02001747,Dunfermline Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+513,S02001748,Dunfermline Brucefield,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+514,S02001749,Dunfermline Garvock Hill,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+515,S02001750,Dunfermline Bellyeoman and Townhill,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+516,S02001751,Dunfermline Duloch North and Lynebank,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+517,S02001752,Dunfermline Touch and Woodmill,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+518,S02001753,Dunfermline Abbeyview North,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+519,S02001754,Dunfermline Abbeyview South,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+520,S02001755,Dunfermline Duloch South,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+521,S02001756,Dunfermline Masterton,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+522,S02001757,Dunfermline Pitcorthie East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+523,S02001758,Dunfermline Pitcorthie West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+524,S02001759,Rosyth North,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+525,S02001760,Rosyth East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+526,S02001761,Rosyth Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+527,S02001762,Rosyth South,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+528,S02001763,North Queensferry and Inverkeithing West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+529,S02001764,Inverkeithing East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+530,S02001765,Dalgety Bay West and Hillend,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+531,S02001766,Dalgety Bay Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+532,S02001767,Dalgety Bay East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+533,S02001768,Crossgates and Halbeath,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+534,S02001769,Hill of Beath and Kingseat,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+535,S02001771,Cowdenbeath North,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+536,S02001772,Kelty West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+537,S02001773,Kelty East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+538,S02001774,Lochore and Crosshill,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+539,S02001775,Ballingry,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+540,S02001776,Cardenden,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+541,S02001777,Lochgelly East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+542,S02001778,Lochgelly West and Lumphinnans,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+543,S02001779,Aberdour and Auchtertool,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+544,S02001780,Burntisland West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+545,S02001781,Burntisland East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+546,S02001782,Kinghorn,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+547,S02001783,Kirkcaldy Linktown & Seafield,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+548,S02001784,Kirkcaldy Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+549,S02001785,Kirkcaldy Bennochy East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+550,S02001786,Kirkcaldy Bennochy West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+551,S02001770,Cowdenbeath South,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+552,S02001787,Kirkcaldy Raith,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+553,S02001788,Kirkcaldy Newliston and Redcraigs,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+554,S02001789,Kirkcaldy Templehall West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+555,S02001790,Kirkcaldy Templehall East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+556,S02001791,Kirkcaldy Dunnikier,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+557,S02001792,Kirkcaldy Chapel,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+558,S02001793,Kirkcaldy Hayfield and Smeaton,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+559,S02001794,Kirkcaldy Pathhead,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+560,S02001795,Kirkcaldy Gallatown and Sinclairtown,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+561,S02001796,Dysart,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+562,S02001797,Wemyss,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+563,S02001798,Thornton and Kinglassie,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+564,S02001799,Leslie and Newcastle,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+565,S02001800,Glenrothes Macedonia and Tanshall,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+566,S02001801,Glenrothes South Parks,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+567,S02001802,Glenrothes Caskieberran and Rimbleton,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+568,S02001803,Glenrothes Auchmuty,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+569,S02001804,Glenrothes Stenton and Finglassie,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+570,S02001805,Glenrothes Pitteuchar,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+571,S02001806,Glenrothes Woodside,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+572,S02001807,Glenrothes Balgeddie and Town Park,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+573,S02001808,Glenrothes Collydean,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+574,S02001809,Glenrothes Cadham and Pitcoudie,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+575,S02001810,Glenrothes Balfarg Pitcairn and Coul,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+576,S02001811,Markinch and Star,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+577,S02001812,Windygates and Coaltown,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+578,S02001813,"Buckhaven, Denbeath and Muiredge",S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+579,S02001814,Methil Methilhill,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+580,S02001815,Methil West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+581,S02001816,Methil East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+582,S02001817,Leven East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+583,S02001818,Leven West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+584,S02001819,Leven North,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+585,S02001820,Largo,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+586,S02001821,Kennoway and Bonnybank,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+587,S02001822,Kettle and Ladybank,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+588,S02001823,Falkland and Freuchie,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+589,S02001824,Auchtermuchty and Gateside,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+590,S02001825,Newburgh,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+591,S02001826,Cupar West and Springfield,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+592,S02001827,Cupar Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+593,S02001828,Cupar East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+594,S02001829,Dairsie Ceres and Dunino,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+595,S02001830,Elie Colinsburgh and Largoward,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+596,S02001831,St Monans and Pittenweem,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+597,S02001832,Anstruther,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+598,S02001833,Crail and Boarhills,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+599,S02001834,St Andrews South East,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+600,S02001835,St Andrews Central,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+601,S02001836,St Andrews South West,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+602,S02001837,St Andrews North and Strathkinness,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+603,S02001838,Leuchars and Guardbridge,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+604,S02001839,Balmullo and Gauldry,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+605,S02001840,Tayport,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+606,S02001841,Newport and Wormit,S12000047,Fife,S37000032,Fife,S08000029,NHS Fife,S92000003
+607,S02001842,Darnley East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+608,S02001843,Darnley North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+609,S02001844,Darnley West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+610,S02001845,Nitshill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+611,S02001846,Crookston South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+612,S02001847,Crookston North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+613,S02001848,Pollok South and West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+614,S02001849,Pollok North and East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+615,S02001850,Cardonald South and East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+616,S02001851,Cardonald North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+617,S02001852,Cardonald West and Central,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+618,S02001853,Penilee,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+619,S02001854,Hillington,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+620,S02001855,Drumoyne and Shieldhall,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+621,S02001856,Govan and Linthouse,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+622,S02001857,Craigton,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+623,S02001858,Mosspark,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+624,S02001859,Ibrox,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+625,S02001860,Ibrox East and Cessnock,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+626,S02001861,Kinning Park and Festival Park,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+627,S02001862,Kingston West and Dumbreck,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+628,S02001863,Pollokshields West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+629,S02001864,Pollokshields East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+630,S02001865,Govanhill West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+631,S02001866,Govanhill East and Aikenhead,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+632,S02001867,Battlefield,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+633,S02001868,Strathbungo,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+634,S02001869,Maxwell Park,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+635,S02001870,Shawlands West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+636,S02001871,Shawlands East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+637,S02001872,Langside,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+638,S02001873,Pollokshaws,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+639,S02001874,Carnwadric West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+640,S02001875,Carnwadric East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+641,S02001876,Newlands,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+642,S02001877,Merrylee and Millbrae,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+643,S02001878,Muirend and Old Cathcart,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+644,S02001879,Carmunnock North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+645,S02001880,Carmunnock South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+646,S02001881,Glenwood South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+647,S02001882,Glenwood North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+648,S02001883,Castlemilk,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+649,S02001884,Kingspark South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+650,S02001885,Kingspark North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+651,S02001886,Cathcart,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+652,S02001887,Mount Florida,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+653,S02001888,Toryglen and Oatlands,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+654,S02001889,Gorbals and Hutchesontown,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+655,S02001890,Laurieston and Tradeston,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+656,S02001891,Calton and Gallowgate,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+657,S02001892,Bridgeton,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+658,S02001893,Dalmarnock,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+659,S02001894,Parkhead West and Barrowfield,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+660,S02001895,Parkhead East and Braidfauld North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+661,S02001896,Braidfauld,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+662,S02001897,Shettleston South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+663,S02001898,Carmyle and Mount Vernon South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+664,S02001899,Mount Vernon North and Sandyhills,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+665,S02001900,Baillieston West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+666,S02001901,Baillieston East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+667,S02001902,Garrowhill West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+668,S02001903,Garrowhill East and Swinton,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+669,S02001904,Easterhouse East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+670,S02001905,Central Easterhouse,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+671,S02001906,"Garthamlock, Auchinlea and Gartloch",S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+672,S02001907,North Barlanark and Easterhouse South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+673,S02001908,Barlanark,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+674,S02001909,Greenfield,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+675,S02001910,Shettleston North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+676,S02001911,Tollcross,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+677,S02001912,Old Shettleston and Parkhead North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+678,S02001913,Carntyne,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+679,S02001914,"Cranhill, Lightburn and Queenslie South",S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+680,S02001915,Craigend and Ruchazie,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+681,S02001916,Riddrie and Hogganfield,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+682,S02001917,Blackhill and Barmulloch East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+683,S02001918,Robroyston and Millerston,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+684,S02001919,Balornock,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+685,S02001920,Barmulloch,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+686,S02001921,Petershill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+687,S02001922,Springburn,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+688,S02001923,Springburn East and Cowlairs,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+689,S02001924,Cowlairs and Port Dundas,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+690,S02001925,Sighthill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+691,S02001926,"Roystonhill, Blochairn, and Provanmill",S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+692,S02001927,Dennistoun North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+693,S02001928,Alexandra Parade,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+694,S02001929,Carntyne West and Haghill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+695,S02001930,Dennistoun,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+696,S02001931,Gallowgate North and Bellgrove,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+697,S02001932,City Centre East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+698,S02001933,City Centre West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+699,S02001934,City Centre South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+700,S02001935,Anderston,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+701,S02001936,Finnieston and Kelvinhaugh,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+702,S02001937,Woodlands,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+703,S02001938,Woodside,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+704,S02001939,Firhill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+705,S02001940,Keppochhill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+706,S02001941,Ruchill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+707,S02001942,Possil Park,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+708,S02001943,Milton West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+709,S02001944,Milton East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+710,S02001945,Summerston Central and West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+711,S02001946,Summerston North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+712,S02001947,Maryhill East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+713,S02001948,Maryhill West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+714,S02001949,Wyndford,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+715,S02001950,Kelvindale,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+716,S02001951,North Kelvin,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+717,S02001952,Kelvingrove and University,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+718,S02001953,Hillhead,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+719,S02001954,Glasgow Harbour and Partick South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+720,S02001955,Partick,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+721,S02001956,Partickhill and Hyndland,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+722,S02001957,Dowanhill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+723,S02001958,Kelvinside and Jordanhill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+724,S02001959,Broomhill,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+725,S02001960,Victoria Park,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+726,S02001961,Whiteinch,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+727,S02001962,Scotstoun North and East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+728,S02001963,Scotstoun South and West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+729,S02001964,Yoker South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+730,S02001965,Yoker North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+731,S02001966,Knightswood West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+732,S02001967,Knightswood East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+733,S02001968,Knightswood Park West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+734,S02001969,Knightswood Park East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+735,S02001970,Anniesland East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+736,S02001971,Anniesland West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+737,S02001972,Blairdardie East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+738,S02001973,Blairdardie West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+739,S02001974,Drumchapel South,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+740,S02001975,Drumchapel North,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+741,S02001976,Drumry East,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+742,S02001977,Drumry West,S12000049,Glasgow City,S37000034,Glasgow City,S08000031,NHS Greater Glasgow and Clyde,S92000003
+743,S02001978,Lochaber West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+744,S02001979,Fort William North,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+745,S02001980,Fort William South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+746,S02001981,Lochaber East and North,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+747,S02001982,Badenoch and Strathspey South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+748,S02001983,Badenoch and Strathspey Central,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+749,S02001984,Badenoch and Strathspey North,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+750,S02001985,Nairn Rural,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+751,S02001986,Nairn East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+752,S02001987,Nairn West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+753,S02001988,Inverness East Rural,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+754,S02001989,Inverness Culloden and Balloch,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+755,S02001990,Inverness Smithton,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+756,S02001991,Inverness Westhill,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+757,S02001992,Inverness Inshes,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+758,S02001993,Inverness Slackbuie,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+759,S02001994,Inverness Lochardil and Holm Mains,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+760,S02001995,Inverness Drummond,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+761,S02001996,Inverness Hilton,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+762,S02001997,Inverness Drakies,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+763,S02001998,"Inverness Central, Raigmore and Longman",S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+764,S02001999,Inverness Crown and Haugh,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+765,S02002000,Inverness Ballifeary and Dalneigh,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+766,S02002001,Inverness Muirtown,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+767,S02002002,Inverness Merkinch,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+768,S02002003,Inverness Scorguie,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+769,S02002004,Inverness Kinmylies and South West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+770,S02002005,Inverness West Rural,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+771,S02002006,Loch Ness,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+772,S02002007,Lochalsh,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+773,S02002008,Skye South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+774,S02002009,Skye North East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+775,S02002010,Skye North West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+776,S02002011,Ross and Cromarty South West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+777,S02002012,Ross and Cromarty North West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+778,S02002013,Ross and Cromarty Central,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+779,S02002014,Ross and Cromarty East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+780,S02002015,Muir of Ord,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+781,S02002016,Conon,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+782,S02002017,Dingwall,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+783,S02002018,Black Isle South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+784,S02002019,Black Isle North,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+785,S02002020,Alness,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+786,S02002021,Invergordon,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+787,S02002022,Seaboard,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+788,S02002023,Tain,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+789,S02002024,Sutherland South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+790,S02002025,Sutherland East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+791,S02002026,Caithness South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+792,S02002027,Wick South,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+793,S02002028,Wick North,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+794,S02002029,Caithness North East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+795,S02002030,Caithness North West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+796,S02002031,Thurso East,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+797,S02002032,Thurso West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+798,S02002033,Sutherland North and West,S12000017,Highland,S37000016,Highland,S08000022,NHS Highland,S92000003
+799,S02002034,Kilmacolm Central,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+800,S02002035,"Kilmacolm, Quarriers, Greenock Upper East/Central",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+801,S02002036,Inverkip and Wemyss Bay,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+802,S02002037,"West Braeside, East Inverkip and West Gourock",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+803,S02002038,Gourock Upper and West Central and Upper Larkfield,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+804,S02002039,"Gourock Central, Upper East and IRH",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+805,S02002040,"Braeside, Branchton, Lower Larkfield and Ravenscraig",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+806,S02002041,"Lower Bow and Larkfield, Fancy Farm, Mallard Bowl",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+807,S02002042,"Gourock East, Greenock West and Lyle Road",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+808,S02002043,Greenock West and Central,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+809,S02002044,"Bow Farm, Barrs Cottage, Cowdenknowes and Overton",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+810,S02002045,Greenock Upper Central,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+811,S02002046,Greenock Town Centre and East Central,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+812,S02002047,Greenock East,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+813,S02002048,"Port Glasgow Upper, West and Central",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+814,S02002049,"Port Glasgow Mid, East and Central",S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+815,S02002050,Port Glasgow Upper East,S12000018,Inverclyde,S37000017,Inverclyde,S08000031,NHS Greater Glasgow and Clyde,S92000003
+816,S02002051,Rural South Midlothian,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+817,S02002052,Penicuik Southeast,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+818,S02002053,Penicuik Southwest,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+819,S02002054,Penicuik East,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+820,S02002055,Penicuik North,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+821,S02002056,Pentland,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+822,S02002057,Roslin and Bilston,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+823,S02002058,Straiton,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+824,S02002059,Loanhead,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+825,S02002060,Bonnyrigg South,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+826,S02002061,Bonnyrigg North,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+827,S02002062,Newbattle and Dalhousie,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+828,S02002063,Eskbank,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+829,S02002064,Shawfair,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+830,S02002065,Thornybank,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+831,S02002066,Dalkeith,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+832,S02002067,Pathhead and Rural East Midlothian,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+833,S02002068,Easthouses,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+834,S02002069,Mayfield,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+835,S02002070,Newtongrange,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+836,S02002071,North Gorebridge,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+837,S02002072,Gorebridge and Middleton,S12000019,Midlothian,S37000018,Midlothian,S08000024,NHS Lothian,S92000003
+838,S02002073,South Speyside and the Cabrach,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+839,S02002074,North Speyside,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+840,S02002075,Rural Keith and Strathisla,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+841,S02002076,Keith and Fife Keith,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+842,S02002077,"Cullen, Portknockie, Findochty, Drybridge and Berryhillock",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+843,S02002078,Buckie Central East,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+844,S02002079,Buckie West and Mains of Buckie,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+845,S02002080,"Mosstodloch, Portgordon and seaward",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+846,S02002081,"Fochabers, Aultmore, Clochan and Ordiquish",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+847,S02002082,"Heldon West, Fogwatt to Inchberry",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+848,S02002083,"Lhanbryde, Urquhart, Pitgavney and seaward",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+849,S02002084,Elgin Cathedral to Ashgrove and Pinefield,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+850,S02002085,New Elgin East,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+851,S02002086,New Elgin West,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+852,S02002087,Elgin Central West,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+853,S02002088,Elgin Bishopmill East and Ladyhill,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+854,S02002089,Elgin Bishopmill West and Newfield,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+855,S02002090,Lossiemouth East and Seatown,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+856,S02002091,Lossiemouth West,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+857,S02002092,"Burghead, Roseisle and Laich",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+858,S02002093,"Findhorn, Kinloss and Pluscarden Valley",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+859,S02002094,Forres Central East and seaward,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+860,S02002095,Forres South West and Mannachie,S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+861,S02002096,"Rafford, Dallas, Dyke to Dava",S12000020,Moray,S37000019,Moray,S08000020,NHS Grampian,S92000003
+862,S02002097,Arran,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+863,S02002098,Springside and Rural,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+864,S02002099,Irvine Tarryholme,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+865,S02002100,Dreghorn,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+866,S02002101,Irvine Broomlands,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+867,S02002102,Irvine Bourtreehill,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+868,S02002103,Irvine Girdle Toll and Staneca,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+869,S02002104,Irvine Perceton and Lawthorn,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+870,S02002105,Irvine Castlepark North,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+871,S02002106,Irvine Castlepark South,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+872,S02002107,Irvine East,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+873,S02002108,Irvine Central,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+874,S02002109,Irvine Fullarton,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+875,S02002110,Stevenston Ardeer,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+876,S02002111,Saltcoats Central,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+877,S02002112,Ardrossan Central,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+878,S02002113,Ardrossan North West,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+879,S02002114,Ardrossan North East,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+880,S02002115,Saltcoats North West,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+881,S02002116,Saltcoats North East,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+882,S02002117,Stevenston North West,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+883,S02002118,Stevenston Hayocks,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+884,S02002119,Kilwinning Whitehirst Park and Woodside,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+885,S02002120,Kilwinning Pennyburn,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+886,S02002121,Kilwinning West and Blacklands,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+887,S02002122,Kilwinning Central and North,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+888,S02002123,Dalry East and Rural,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+889,S02002124,Dalry West,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+890,S02002125,Fairlie and Rural,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+891,S02002126,West Kilbride and Seamill,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+892,S02002127,Largs South,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+893,S02002128,Largs Central and Cumbrae,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+894,S02002129,Largs North,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+895,S02002130,Skelmorlie and Rural,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+896,S02002131,Kilbirnie North,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+897,S02002132,Kilbirnie South and Longbar,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+898,S02002133,Beith West,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+899,S02002134,Beith East and Rural,S12000021,North Ayrshire,S37000020,North Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+900,S02002135,Overtown,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+901,S02002136,Netherton and Kirkhill,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+902,S02002137,Muirhouse,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+903,S02002138,Muirhouse and Knowetop,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+904,S02002139,Craigneuk Wishaw,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+905,S02002140,Pather,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+906,S02002141,Wishaw South,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+907,S02002142,Wishaw North,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+908,S02002143,Coltness,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+909,S02002144,Wishaw East,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+910,S02002145,Newmains,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+911,S02002146,Allanton - Newmains Rural,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+912,S02002147,Shotts,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+913,S02002148,Stane,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+914,S02002149,Harthill and Salsburgh,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+915,S02002150,Cleland,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+916,S02002151,Newarthill,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+917,S02002152,Carfin North,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+918,S02002153,Clydesdale and New Stevenston,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+919,S02002154,Carfin and Cleekhimin,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+920,S02002155,Motherwell South,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+921,S02002156,Ladywell,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+922,S02002157,Motherwell West,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+923,S02002158,Motherwell North,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+924,S02002159,Forgewood,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+925,S02002160,Holytown,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+926,S02002161,Milnwood,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+927,S02002162,Orbiston,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+928,S02002163,Bellshill South,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+929,S02002164,Hattonrigg,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+930,S02002165,Bellshill Central,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+931,S02002166,Fallside,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+932,S02002167,Viewpark,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+933,S02002168,Birkenshaw,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+934,S02002169,Kirkwood and Bargeddie,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+935,S02002170,Kirkshaws,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+936,S02002171,Dundyvan,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+937,S02002172,Drumpellier and Langloan,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+938,S02002173,Coatbridge West,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+939,S02002174,Townhead,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+940,S02002175,Sunnyside and Cliftonville,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+941,S02002176,Cliftonville,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+942,S02002177,Shawhead and Whifflet,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+943,S02002178,Greenend and Carnbroe,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+944,S02002179,Calderbank and Brownsburn,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+945,S02002180,Chapelhall West,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+946,S02002181,Chapelhall East,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+947,S02002182,Craigneuk Airdrie,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+948,S02002183,Petersburn,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+949,S02002184,Gartlea,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+950,S02002185,Cairnhill,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+951,S02002186,Coatdyke and Whinhall,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+952,S02002187,Thrashbush,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+953,S02002188,Airdrie North,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+954,S02002189,Drumgelloch,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+955,S02002190,Caldercruix and Plains,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+956,S02002191,Glenmavis and Greengairs,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+957,S02002192,Gartcosh and Marnock,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+958,S02002193,Cardowan and Millerston,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+959,S02002194,Stepps,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+960,S02002195,Chryston and Muirhead,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+961,S02002196,Moodiesburn West,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+962,S02002197,Moodiesburn East,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+963,S02002198,Westfield,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+964,S02002199,Condorrat,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+965,S02002200,Greenfaulds,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+966,S02002201,Seafar,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+967,S02002202,Cumbernauld Central,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+968,S02002203,Kildrum,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+969,S02002204,Abronhill South,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+970,S02002205,Abronhill North,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+971,S02002206,Village and Castlecary,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+972,S02002207,Carrickstone,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+973,S02002208,Balloch West,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+974,S02002209,Balloch East,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+975,S02002210,Kilsyth East and Croy,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+976,S02002211,Kilsyth Bogside,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+977,S02002212,Balmalloch,S12000050,North Lanarkshire,S37000035,North Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+978,S02002213,"Stromness, Sandwick and Stenness",S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+979,S02002214,West Mainland,S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+980,S02002215,East Mainland,S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+981,S02002216,West Kirkwall,S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+982,S02002217,East Kirkwall,S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+983,S02002218,Isles,S12000023,Orkney Islands,S37000022,Orkney Islands,S08000025,NHS Orkney,S92000003
+984,S02002219,"Powmill, Cleish and Scotlandwell",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+985,S02002220,Kinross,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+986,S02002221,Milnathort and Crook of Devon,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+987,S02002222,"Muthill, Greenloaning and Gleneagles",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+988,S02002223,Auchterarder,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+989,S02002224,"Comrie, Gilmerton and St Fillans",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+990,S02002225,Crieff North,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+991,S02002226,Crieff South,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+992,S02002227,Aberuthven and Almondbank,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+993,S02002228,"Glenfarg, Dunning and Rhynd",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+994,S02002229,Bridge of Earn and Abernethy,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+995,S02002230,Moncrieffe and Friarton,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+996,S02002231,"Viewlands, Craigie and Wellshill",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+997,S02002232,Burghmuir and Oakbank,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+998,S02002233,Western Edge,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+999,S02002234,Letham,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1000,S02002235,"Hillyland, Tulloch and Inveralmond",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1001,S02002236,North Muirton and Old Scone,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1002,S02002237,Muirton,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1003,S02002238,North Inch,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1004,S02002239,Central and South Inch,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1005,S02002240,Gannochy and Walnut Grove,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1006,S02002241,Scone,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1007,S02002242,"Guildtown, Balbeggie and St Madoes",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1008,S02002243,Errol and Inchture,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1009,S02002244,"Invergowrie, Longforgan and Abernyte",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1010,S02002245,Coupar Angus and Meigle,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1011,S02002246,Alyth,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1012,S02002247,"Blair Atholl, Strathardle and Glenshee",S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1013,S02002248,Blairgowrie East (Rattray),S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1014,S02002249,Blairgowrie West,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1015,S02002250,Stanley and Murthly,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1016,S02002251,Luncarty and Dunkeld,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1017,S02002252,Pitlochry,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1018,S02002253,Rannoch and Aberfeldy,S12000048,Perth & Kinross,S37000033,Perth and Kinross,S08000030,NHS Tayside,S92000003
+1019,S02002254,Lochwinnoch,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1020,S02002255,Renfrewshire Rural South and Howwood,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1021,S02002256,Renfrewshire Rural North and Langbank,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1022,S02002257,Kilbarchan,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1023,S02002258,Johnstone South West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1024,S02002259,Johnstone North West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1025,S02002260,Johnstone North East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1026,S02002261,Johnstone South East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1027,S02002262,Elderslie and Phoenix,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1028,S02002263,Paisley Ferguslie,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1029,S02002264,Paisley North West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1030,S02002265,Paisley West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1031,S02002266,Paisley Foxbar,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1032,S02002267,Paisley South West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1033,S02002268,Paisley Glenburn West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1034,S02002269,Paisley Glenburn East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1035,S02002270,Paisley South,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1036,S02002271,Paisley South East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1037,S02002272,Paisley Dykebar,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1038,S02002273,Paisley East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1039,S02002274,Paisley Central,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1040,S02002275,Paisley North East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1041,S02002276,Paisley Ralston,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1042,S02002277,Paisley Gallowhill and Hillington,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1043,S02002278,Paisley North,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1044,S02002279,Renfrew West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1045,S02002280,Renfrew South,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1046,S02002281,Renfrew East,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1047,S02002282,Renfrew North,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1048,S02002283,Erskine East and Inchinnan,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1049,S02002284,Erskine Central,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1050,S02002285,Erskine West,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1051,S02002286,Bishopton,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1052,S02002287,Linwood South,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1053,S02002288,Linwood North,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1054,S02002289,Houston South,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1055,S02002290,Houston North,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1056,S02002291,Bridge of Weir,S12000038,Renfrewshire,S37000024,Renfrewshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1057,S02002292,Tweeddale West Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1058,S02002293,Peebles North,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1059,S02002294,Peebles South,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1060,S02002295,Tweeddale East Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1061,S02002296,Earlston Stow and Clovernfords Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1062,S02002297,Galashiels North,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1063,S02002298,Galashiels West,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1064,S02002299,Galashiels South,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1065,S02002300,Langlee,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1066,S02002301,Melrose and Tweedbank Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1067,S02002302,Lauder and Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1068,S02002303,Berwickshire Central,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1069,S02002304,Duns,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1070,S02002305,Berwickshire East,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1071,S02002306,Eyemouth,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1072,S02002307,Chirnside and Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1073,S02002308,Coldstream and Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1074,S02002309,Cheviot East,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1075,S02002310,Kelso North,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1076,S02002311,Kelso South,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1077,S02002312,Cheviot West,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1078,S02002313,St Boswells and Newtown Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1079,S02002314,Jedburgh,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1080,S02002315,Denholm and Hermitage,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1081,S02002316,Burnfoot,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1082,S02002317,Hawick Central,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1083,S02002318,Hawick West End,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1084,S02002319,Hawick North,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1085,S02002320,Ettrick Yarrow and Liliesleaf Area,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1086,S02002321,Selkirk,S12000026,Scottish Borders,S37000025,Scottish Borders,S08000016,NHS Borders,S92000003
+1087,S02002322,Shetland South,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1088,S02002323,Lerwick South,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1089,S02002324,Lerwick North,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1090,S02002325,Central Shetland,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1091,S02002326,East and West Mainland,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1092,S02002327,North Mainland,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1093,S02002328,North and East Isles,S12000027,Shetland Islands,S37000026,Shetland Islands,S08000026,NHS Shetland,S92000003
+1094,S02002329,Carrick South,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1095,S02002330,Girvan Glendoune,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1096,S02002331,Girvan Ailsa,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1097,S02002332,Maybole,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1098,S02002333,Carrick North,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1099,S02002334,Coylton,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1100,S02002335,Alloway and Doonfoot,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1101,S02002336,Castlehill and Kincaidston,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1102,S02002337,Belmont,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1103,S02002338,Holmston and Forehill,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1104,S02002339,Ayr South Harbour and Town Centre,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1105,S02002340,"Ayr North Harbour, Wallacetown and Newton South",S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1106,S02002341,Craigie,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1107,S02002342,Dalmilling,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1108,S02002343,"Lochside, Braehead and Whitletts",S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1109,S02002344,Newton North,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1110,S02002345,Heathfield,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1111,S02002346,Prestwick West,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1112,S02002347,Prestwick East,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1113,S02002348,Prestwick Airport and Monkton,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1114,S02002349,"Annbank, Mossblown and Tarbolton - the Coalfields",S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1115,S02002350,"Dundonald, Loans and Symington",S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1116,S02002351,Muirhead,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1117,S02002352,Barassie,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1118,S02002353,Troon,S12000028,South Ayrshire,S37000027,South Ayrshire,S08000015,NHS Ayrshire and Arran,S92000003
+1119,S02002354,Clydesdale South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1120,S02002355,"Biggar, Symington, Thankerton and Dolphinton",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1121,S02002356,"Carstairs, Carstairs Junction and Carnwath",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1122,S02002357,"Forth, Braehead and Auchengray",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1123,S02002358,Law,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1124,S02002359,Carluke West,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1125,S02002360,Carluke North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1126,S02002361,Carluke East,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1127,S02002362,Carluke South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1128,S02002363,"Crossford, Braidwood and Yieldshields",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1129,S02002364,Lanark North West,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1130,S02002365,Lanark North East,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1131,S02002366,Lanark South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1132,S02002367,Hazelbank and Kirkfieldbank,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1133,S02002368,"Douglas, Coalburn and Rigside",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1134,S02002369,Lesmahagow,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1135,S02002370,Kirkmuirhill and Blackwood,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1136,S02002371,Ashgill and Netherburn,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1137,S02002372,Merryton and Meadowhill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1138,S02002373,"Larkhall Central, Raploch, Millheugh and Burnhead",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1139,S02002374,Hareleeshill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1140,S02002375,Strutherhill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1141,S02002376,Stonehouse,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1142,S02002377,Strathaven South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1143,S02002378,Strathaven North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1144,S02002379,"Chapelton, Glengavel and Sandford",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1145,S02002380,"Glassford, Quarter and Allanton",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1146,S02002381,Eddlewood,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1147,S02002382,Low Waters,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1148,S02002383,Silvertonhill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1149,S02002384,Hamilton Centre and Low Parks,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1150,S02002385,Laighstonehall,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1151,S02002386,Fairhill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1152,S02002387,Woodhead and Meikle Earnock,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1153,S02002388,Little Earnock,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1154,S02002389,Earnock,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1155,S02002390,Hillhouse,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1156,S02002391,High Blantyre,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1157,S02002392,Blantyre South and Wheatlands,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1158,S02002393,Low Blantyre and Bardykes,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1159,S02002394,Blantytre North and Coatshill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1160,S02002395,Burnbank North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1161,S02002396,Burnbank Central and Udston,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1162,S02002397,Burnbank South and Chantinghall,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1163,S02002398,Whitehill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1164,S02002399,Bothwell South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1165,S02002400,Bothwell North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1166,S02002401,Uddingston and Gardenside,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1167,S02002402,"Halfway, Hallside and Drumsagard",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1168,S02002403,Westburn and Newton,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1169,S02002404,Vicarland and Cairns,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1170,S02002405,Whitlawburn and Greenlees,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1171,S02002406,Cambuslang Central,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1172,S02002407,"Burgh, Eastfield and Silverbank",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1173,S02002408,Farme Cross and Gallowflat North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1174,S02002409,Shawfield and Clincarthill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1175,S02002410,Burnhill and Bankhead North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1176,S02002411,Bankhead South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1177,S02002412,Spittal,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1178,S02002413,High Crosshill,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1179,S02002414,Burnside and Springhall,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1180,S02002415,Fernhill and Cathkin,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1181,S02002416,Nerston and EK Landward Area,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1182,S02002417,Calderwood East,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1183,S02002418,Calderwood Central,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1184,S02002419,Calderwood West and Nerston,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1185,S02002420,St Leonards North,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1186,S02002421,St Leonards South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1187,S02002422,East Mains,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1188,S02002423,West Mains,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1189,S02002424,Stewartfield East,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1190,S02002425,Stewartfield West,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1191,S02002426,"Thorntonhall, Jackton and Gardenhall",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1192,S02002427,Hairmyres and Westwood West,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1193,S02002428,Mossneuk and Newlandsmuir,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1194,S02002429,Crosshouse and Lindsayfield,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1195,S02002430,Whitehills West,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1196,S02002431,Greenhills,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1197,S02002432,Westwood South,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1198,S02002433,Westwood East,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1199,S02002434,The Murray,S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1200,S02002435,"Birniehill, Kelvin and Whitehills East",S12000029,South Lanarkshire,S37000028,South Lanarkshire,S08000032,NHS Lanarkshire,S92000003
+1201,S02002436,Blane Valley,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1202,S02002437,Balfron and Drymen,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1203,S02002438,Kippen and Fintry,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1204,S02002439,Cambusbarron,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1205,S02002440,Plean and Rural SE,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1206,S02002441,Cowie,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1207,S02002442,Fallin,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1208,S02002443,Bannockburn,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1209,S02002444,Hillpark,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1210,S02002445,Broomridge,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1211,S02002446,Borestone,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1212,S02002447,King's Park and Torbrex,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1213,S02002448,Braehead,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1214,S02002449,City Centre,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1215,S02002450,Raploch,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1216,S02002451,Cornton,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1217,S02002452,Causewayhead,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1218,S02002453,Bridge of Allan and University,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1219,S02002454,Forth,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1220,S02002455,Dunblane East,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1221,S02002456,Dunblane West,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1222,S02002457,Carse of Stirling,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1223,S02002458,Callander and Trossachs,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1224,S02002459,Highland,S12000030,Stirling,S37000005,Clackmannanshire and Stirling,S08000019,NHS Forth Valley,S92000003
+1225,S02002460,IZ01,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1226,S02002461,IZ02,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1227,S02002462,IZ03,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1228,S02002463,IZ04,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1229,S02002464,IZ05,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1230,S02002465,IZ06,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1231,S02002466,IZ07,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1232,S02002467,IZ08,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1233,S02002468,IZ09,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1234,S02002469,IZ10,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1235,S02002470,IZ11,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1236,S02002471,IZ12,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1237,S02002472,IZ13,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1238,S02002473,IZ14,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1239,S02002474,IZ15,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1240,S02002475,IZ16,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1241,S02002476,IZ17,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1242,S02002477,IZ18,S12000039,West Dunbartonshire,S37000029,West Dunbartonshire,S08000031,NHS Greater Glasgow and Clyde,S92000003
+1243,S02002478,Fauldhouse,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1244,S02002479,Breich Valley,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1245,S02002480,West Calder and Polbeth,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1246,S02002481,"Bellsquarry, Adambrae and Kirkton",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1247,S02002482,Bankton and Murieston,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1248,S02002483,Dedridge East,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1249,S02002484,Mid Calder and Kirknewton,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1250,S02002485,East Calder,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1251,S02002486,Pumpherston and Uphall Station,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1252,S02002487,Craigshill,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1253,S02002488,Howden,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1254,S02002489,Livingston Village and Eliburn South,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1255,S02002490,Ladywell,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1256,S02002491,Knightsridge,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1257,S02002492,Knightsridge and Deans North,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1258,S02002493,Deans,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1259,S02002494,Carmondean and Eliburn North,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1260,S02002495,Seafield,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1261,S02002496,Blackburn,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1262,S02002497,Blaeberry Hill and East Whitburn,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1263,S02002498,Whitburn Central,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1264,S02002499,"Whitburn, Croftmalloch and Greenrigg",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1265,S02002500,Armadale,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1266,S02002501,Armadale South,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1267,S02002502,"Bathgate, Wester Inch and Inchcross",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1268,S02002503,Bathgate and Boghall,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1269,S02002504,Bathgate East,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1270,S02002505,Bathgate West,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1271,S02002506,"Blackridge, Westfield and Torphichen",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1272,S02002507,Linlithgow South,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1273,S02002508,Linlithgow Bridge,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1274,S02002509,Linlithgow North,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1275,S02002510,"Winchburgh, Bridgend and Philpstoun",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1276,S02002511,Broxburn Kirkhill,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1277,S02002512,"Uphall, Dechmont and Ecclesmachan",S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1278,S02002513,Broxburn South,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
+1279,S02002514,Broxburn East,S12000040,West Lothian,S37000030,West Lothian,S08000024,NHS Lothian,S92000003
