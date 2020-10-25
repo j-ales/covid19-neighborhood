@@ -29,6 +29,8 @@ def commonPlotDecoration():
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
 
+
+# %%
 datazoneToInterZone = pd.read_csv('scotland-datazone-to-interzone.csv');
 
 # QS603SC
@@ -36,6 +38,8 @@ datazoneToInterZone = pd.read_csv('scotland-datazone-to-interzone.csv');
 studentPop = pd.read_csv('scotland_student_pop_SNS2011.csv');
 studentPop = studentPop.rename(columns={'All full-time students aged 16 to 74': 'studentPop'})
 
+#QS102SC table density converted to IZ
+izDensity = pd.read_csv('scotland-iz-density.csv')
 restricted = pd.read_csv('currentRestrictionScotland.csv')
 
 weeklyCases =  pd.read_csv('scotland_weekly_cases_iz.csv', thousands=',');
@@ -47,18 +51,32 @@ weeklyCases['cases']=pd.to_numeric(weeklyCases['cases'].replace(to_replace='1-4'
 izNames = pd.read_csv('scotland-iz.csv')
 izCentroids = pd.read_csv('scotland-iz-centroids.csv')
 HE_centroids = pd.read_csv('./learning-providers-plus.csv')
+
+
+simd=pd.read_csv('simd_zones.csv',thousands=',')
+simd['simdBinned'] = pd.cut(simd[' Overall_SIMD16_rank '],bins=[0, 1395, 2790, 4185, 5580, 6976],labels=[1,2,3,4,5])
+simd = simd.groupby(['Council_area','Intermediate_Zone'],as_index=False).min()
 # %% Get student pop to IZ
+
+izSimd = pd.read_csv('scotland-iz-simd.csv')
+izSimd['simd12_percent']= izSimd['simd1_percent']+izSimd['simd2_percent']
+izSimd['simd45_percent']= izSimd['simd4_percent']+izSimd['simd5_percent']
 
 merged = pd.merge(left=datazoneToInterZone, right=studentPop, left_on='DataZone', right_on='DataZone')
 studentPopIz = merged.groupby(['InterZone'])[['studentPop']].agg('sum')
 
 weeklyCases = pd.merge(left=weeklyCases,right=izNames[['IntZone','IntZoneName','CAName']],left_on=['council','IZ'], right_on=['CAName', 'IntZoneName'])
+
+#weeklyCases = pd.merge(left=weeklyCases,right=simd[['Intermediate_Zone','Council_area','simdBinned','sim1dPercent']],left_on=['council','IZ'], right_on=['Council_area', 'Intermediate_Zone'])
+weeklyCases = pd.merge(left=weeklyCases,right=izDensity,left_on='IntZone',right_on='InterZone')
+
+weeklyCases = pd.merge(left=weeklyCases,right=izSimd,left_on='IntZone',right_on='IntZone')
 weeklyCases = pd.merge(left=weeklyCases,right=studentPopIz,left_on='IntZone',right_index=True)
 
 weeklyCases['studentPercent'] = weeklyCases['studentPop'] / weeklyCases['pop']
 weeklyCases['casePer100k'] = 1e5*weeklyCases['cases'].div(weeklyCases['pop'], axis=0)
 
-# %%
+
 
 HE_lon = HE_centroids['LONGITUDE']
 HE_lat = HE_centroids['LATITUDE']
@@ -107,6 +125,7 @@ plt.ylabel('Weekly Cases per 100k')
 
 
 plt.title('Scotland Intermediate Zone Case Rates ')
+ax = plt.gca()
 commonPlotDecoration()
 
 plt.show()
@@ -152,6 +171,34 @@ plt.ylabel('Weekly Cases per 100k')
 commonPlotDecoration()
 plt.show()
 
+# %% Bin by SIMD
+fig, ax = plt.subplots(1, 1)
+#[33,27.3,19.6]
+lowPopThresh = 0
+highPopThresh = 19.6
+
+legendList = list()
+for iSimd in range(1,5+1):
+    izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd)
+                                 & (weeklyCases['Density']<highPopThresh) & (weeklyCases['Density']>lowPopThresh)
+                                 & ~(weeklyCases['council'].isin(restricted['council'])) ]
+    #izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd) & (   weeklyCases['council'].isin(restricted['council']))]
+
+    legendList.append(f'{len(izWithSimd["IntZone"].unique())} areas with most pop. in SIMD{iSimd} zones')
+
+    izWithSimd= izWithSimd.groupby(['dateEnd'])[['casePer100k']].mean()
+    izWithSimd.plot(y='casePer100k',ax=ax,linewidth=3)
+
+plt.xlim([dt.date(2020, 7, 1), weeklyCases['dateEnd'].max()])
+
+plt.legend(legendList,frameon=False)
+plt.ylabel('Weekly Cases per 100k')
+commonPlotDecoration()
+plt.title('Scotland Outwith Central Belt\nLess than 20 persons/hectare')
+plt.ylim(0,300)
+plt.show()
+
+
 
 # %%
 from IPython.display import display, HTML, Markdown
@@ -159,7 +206,7 @@ import imgkit
 from tableTemplate import css
 
 maxDate = weeklyCases['dateEnd'].max()
-mostRecentWeek = weeklyCases.loc[weeklyCases['dateEnd']==maxDate];
+mostRecentWeek = weeklyCases.loc[weeklyCases['dateEnd']==maxDate]
 mostRecentWeek = pd.merge(left=mostRecentWeek,right=izCentroids[['IntZone','uni_name','uni_distance']],left_on=['IntZone'], right_on=['IntZone'])
 
 mostRecentWeek = mostRecentWeek.sort_values('casePer100k',ascending=False)
@@ -168,18 +215,31 @@ mostRecentWeek['studentPercent'] = 100*mostRecentWeek['studentPercent']
 top30 = mostRecentWeek.head(30)
 
 top30 = top30[
-    ['council','IZ','cases','casePer100k','studentPercent',
-     'uni_distance','uni_name']]
+    # ['council','IZ','cases','casePer100k','studentPercent',
+    #  'uni_distance','uni_name']]
+['council', 'IZ', 'cases', 'casePer100k',
+ 'Density',
+ 'simd12_percent','simd45_percent']]
 
+top30[['simd12_percent','simd45_percent']]=100*top30[['simd12_percent','simd45_percent']]
+ #'simd1_percent','simd2_percent','simd3_percent','simd4_percent','simd5_percent']]
+#
+# di = {'IZ': 'Neighbourhood',
+#       'council': 'Local Authority',
+#       'cases': 'Number of Cases',
+#       'casePer100k': 'Cases per 100k pop',
+#       'studentPercent': 'Student Percentage',
+#       'uni_distance': 'Miles to Univeristy',
+#       'uni_name': 'Nearest University'
+#      }
 di = {'IZ': 'Neighbourhood',
       'council': 'Local Authority',
       'cases': 'Number of Cases',
       'casePer100k': 'Cases per 100k pop',
-      'studentPercent': 'Student Percentage',
-      'uni_distance': 'Miles to Univeristy',
-      'uni_name': 'Nearest University'
+      'Density': 'Persons per Hectare',
+      'simd12_percent': '% in most deprived (SIMD1/2)',
+      'simd45_percent': '% in least deprived (SIMD4/5)',
      }
-
 top30.rename(di,axis=1,inplace=True)
 
 pd.set_option('precision',2)
@@ -187,7 +247,12 @@ pd.set_option('precision',2)
 fileModString =maxDate.strftime('%b-%d-%Y')
 
 header='<b>Scotland 30 Intermediate Zones with highest cases per 100k population for 7 days ending ' + fileModString + '</b><br><br>'
-html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
+#html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
+html=(top30.to_html(formatters={
+    'Number of Cases': '{:,.0f}'.format,
+    '% in most deprived (SIMD1/2)': '{:,.0f}%'.format,
+    '% in least deprived (SIMD4/5)': '{:,.0f}%'.format,
+    },index=False))
 footer='<br>Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
 
 imgkit.from_string(css+header+html+footer,'test.png')
