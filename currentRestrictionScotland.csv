@@ -1,19 +1,34 @@
-﻿council
-Clackmannanshire
-East Ayrshire
-East Dunbartonshire
-East Lothian 
-East Renfrewshire
-City of Edinburgh
-Falkirk
-Glasgow City
-Inverclyde
-Midlothian
-North Ayrshire
-North Lanarkshire
-Renfrewshire
-South Ayrshire
-South Lanarkshire
-Stirling
-West Dunbartonshire
-West Lothian
+﻿council,level
+Clackmannanshire,3
+East Ayrshire,3
+East Dunbartonshire,3
+East Lothian,3
+East Renfrewshire,3
+City of Edinburgh,3
+Falkirk,3
+Glasgow City,3
+Inverclyde,3
+Midlothian,3
+North Ayrshire,3
+North Lanarkshire,3
+Renfrewshire,3
+South Ayrshire,3
+South Lanarkshire,3
+Stirling,3
+West Dunbartonshire,3
+West Lothian,3
+Dundee City,3
+Aberdeen City,2
+Aberdeenshire,2
+Angus,2
+Argyll & Bute,2
+Scottish Borders,2
+Dumfries & Galloway,2
+Fife,2
+Perth & Kinross,2
+Highland,1
+Moray,1
+Orkney Islands,1
+Shetland Islands,1
+Na h-Eileanan Siar,1
+,

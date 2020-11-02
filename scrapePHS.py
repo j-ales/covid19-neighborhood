@@ -17,8 +17,8 @@ retry_strategy = Retry(
 adapter = HTTPAdapter(max_retries=retry_strategy)
 
 
-start_date = dt.date(2020, 10, 21)
-end_date = dt.date(2020, 10, 21)
+start_date = dt.date(2020, 10, 25)
+end_date = dt.date(2020, 10, 29)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
 #List of councils to skip
@@ -30,8 +30,8 @@ councilsFinished = []
 errorCount = 0
 finished = False
 
-while (errorCount < 200) & (not finished):
-
+while not finished:
+    print("Top of while loop")
     try:
         s = requests.Session()
         s.mount("https://", adapter)
@@ -138,7 +138,7 @@ while (errorCount < 200) & (not finished):
             numdays = (end_date - start_date).days +1
             date_list = [end_date - dt.timedelta(days=x) for x in range(numdays)]
 
-            for thisDate in range(0,len(date_list),7):
+            for thisDate in range(0,len(date_list),1):
 
                 end_date = date_list[thisDate]
                 print(f'Processing: {date_list[thisDate].strftime("%-d %B %Y")}')
@@ -220,7 +220,8 @@ while (errorCount < 200) & (not finished):
                 df.to_csv('tmp.csv')
             end_date = end_date_fix #reset end date.
             councilsFinished.append(thisCouncil)
-        finsished=True
+        print('Finished')
+        finished=True
     except KeyboardInterrupt:
         print("Caught Keyboard Interrupt")
         break
