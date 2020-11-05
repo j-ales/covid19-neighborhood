@@ -178,6 +178,7 @@ MSOA_centroids.insert(1, "GROUPS", groups)
 
 
 
+
 # %% Make a plot of cases per week that classifies MSOAs by distance to universities.
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -190,7 +191,7 @@ distThresh = 1
 
 
 
-merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='msoa11_cd')
+merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='areasCode')
 merged = pandas.merge(left=merged, right=MSOA_pop, left_on='MSOA11CD', right_on='MSOA Code')
 merged = pandas.merge(left=merged, right=MSOA_student_pop, left_on='MSOA11CD', right_on='MSOA Code')
 merged = pandas.merge(left=merged, right=MSOA_density, left_on='MSOA11CD', right_on='msoacd')
