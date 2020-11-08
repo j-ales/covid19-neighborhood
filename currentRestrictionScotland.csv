@@ -1,34 +1,34 @@
-﻿council,level
-Clackmannanshire,3
-East Ayrshire,3
-East Dunbartonshire,3
-East Lothian,3
-East Renfrewshire,3
-City of Edinburgh,3
-Falkirk,3
-Glasgow City,3
-Inverclyde,3
-Midlothian,3
-North Ayrshire,3
-North Lanarkshire,3
-Renfrewshire,3
-South Ayrshire,3
-South Lanarkshire,3
-Stirling,3
-West Dunbartonshire,3
-West Lothian,3
-Dundee City,3
-Aberdeen City,2
-Aberdeenshire,2
-Angus,2
-Argyll & Bute,2
-Scottish Borders,2
-Dumfries & Galloway,2
-Fife,2
-Perth & Kinross,2
-Highland,1
-Moray,1
-Orkney Islands,1
-Shetland Islands,1
-Na h-Eileanan Siar,1
-,
+﻿CA,council,level
+S12000005,Clackmannanshire,3
+S12000008,East Ayrshire,3
+S12000045,East Dunbartonshire,3
+S12000010,East Lothian,3
+S12000011,East Renfrewshire,3
+S12000036,City of Edinburgh,3
+S12000014,Falkirk,3
+S12000049,Glasgow City,3
+S12000018,Inverclyde,3
+S12000019,Midlothian,3
+S12000021,North Ayrshire,3
+S12000050,North Lanarkshire,3
+S12000038,Renfrewshire,3
+S12000028,South Ayrshire,3
+S12000029,South Lanarkshire,3
+S12000030,Stirling,3
+S12000039,West Dunbartonshire,3
+S12000040,West Lothian,3
+S12000042,Dundee City,3
+S12000033,Aberdeen City,2
+S12000034,Aberdeenshire,2
+S12000041,Angus,2
+S12000035,Argyll & Bute,2
+S12000026,Scottish Borders,2
+S12000006,Dumfries & Galloway,2
+S12000047,Fife,2
+S12000048,Perth & Kinross,2
+S12000017,Highland,1
+S12000020,Moray,1
+S12000023,Orkney Islands,1
+S12000027,Shetland Islands,1
+S12000013,Na h-Eileanan Siar,1
+,,
