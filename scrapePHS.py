@@ -17,8 +17,8 @@ retry_strategy = Retry(
 adapter = HTTPAdapter(max_retries=retry_strategy)
 
 
-start_date = dt.date(2020, 10, 29)
-end_date = dt.date(2020, 11, 4)
+start_date = dt.date(2020, 11, 1)
+end_date = dt.date(2020, 11, 7)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
 #List of councils to skip

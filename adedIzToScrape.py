@@ -4,7 +4,7 @@ import datetime as dt
 # cases =  pd.read_csv('cases_from_nov5.csv', thousands=',')
 #
 # casesOlder = pd.read_csv('cases_from_nov4.csv', thousands=',')
-cases =  pd.read_csv('scotland-weekly-iz-20201107.csv', thousands=',')
+cases =  pd.read_csv('tmp.csv', thousands=',')
 
 casesOlder = pd.read_csv('scotland_weekly_cases_iz.csv', thousands=',')
 

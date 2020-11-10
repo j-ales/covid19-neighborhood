@@ -45,6 +45,9 @@ studentPop = studentPop.rename(columns={'All full-time students aged 16 to 74': 
 #QS102SC table density converted to IZ
 izDensity = pd.read_csv('scotland-iz-density.csv')
 restricted = pd.read_csv('currentRestrictionScotland.csv')
+izNames = pd.read_csv('scotland-iz.csv')
+izCentroids = pd.read_csv('scotland-iz-centroids.csv')
+HE_centroids = pd.read_csv('./learning-providers-plus.csv')
 
 weeklyCases =  pd.read_csv('scotland_weekly_cases_iz.csv', thousands=',');
 #weeklyCases =  pd.read_csv('scotland-iz-cases-from-aug.csv', thousands=',');
@@ -53,6 +56,7 @@ weeklyCases =  pd.read_csv('scotland_weekly_cases_iz.csv', thousands=',');
 dailyCasesByCouncil = pd.read_csv('scotland-daily-council.csv')
 dailyCasesByCouncil = pd.merge(left=dailyCasesByCouncil,right=restricted,left_on='CA',right_on='CA')
 dailyCasesByCouncil['Date']=pd.to_datetime(dailyCasesByCouncil['Date'],format='%Y%m%d')
+
 councilPop=pd.merge(left=izDensity,right=izNames,  left_on='InterZone', right_on='IntZone')
 councilPop=councilPop.groupby('CA').sum()
 councilPop=councilPop[['All people','Area (hectares)']].reset_index()
@@ -63,9 +67,6 @@ weeklyCases['dateStart']=pd.to_datetime(weeklyCases['dateStart'])
 #Replace the obfuscated 1-4, with midpoint 2.5
 weeklyCases['cases']=pd.to_numeric(weeklyCases['cases'].replace(to_replace='1-4',value=2.5))
 
-izNames = pd.read_csv('scotland-iz.csv')
-izCentroids = pd.read_csv('scotland-iz-centroids.csv')
-HE_centroids = pd.read_csv('./learning-providers-plus.csv')
 
 
 simd=pd.read_csv('simd_zones.csv',thousands=',')
@@ -257,30 +258,34 @@ fig, ax = plt.subplots(1, 1)
 councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
 popByLevel=councilPopRes.groupby('level').sum()
 legendList = list()
-councilList = ('City of Edinburgh','Dundee City','Perth & Kinross','Midlothian','East Lothian','West Lothian','Fife')
+councilList = ('City of Edinburgh','Dundee City','Perth & Kinross','Midlothian','East Lothian','West Lothian',
+               'Falkirk','Clackmannanshire','Fife')
 popList = councilPopRes.set_index('council')
 for councilName  in councilList:
     thisLevel = dailyCasesByCouncil.loc[(dailyCasesByCouncil['CAName']==councilName)]
 
     legendList.append(councilName)
 
-    dailyPos = thisLevel.groupby(['Date'])[['DailyPositive']].sum().rolling(7).sum()
 
-    dailyRate = 1e5*dailyPos/popList['All people'].loc[councilName]
+    # dailyPos = thisLevel.groupby(['Date'])[['DailyPositive']].sum().rolling(7).sum()
+    # dailyRate = 1e5*dailyPos/popList['All people'].loc[councilName]
+
+    dailyPositivePercent = thisLevel.groupby(['Date'])[['PositivePercentage']].mean().rolling(7).mean()
+    dailyRate =  dailyPositivePercent
 
     if councilName=='Fife':
-        dailyRate.plot(y='DailyPositive', ax=ax, linewidth=4)
+        dailyRate.plot(y='PositivePercentage', ax=ax, linewidth=4)
     else:
-        dailyRate.plot(y='DailyPositive', ax=ax, linewidth=2)
+        dailyRate.plot(y='PositivePercentage', ax=ax, linewidth=2)
 
 plt.xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
 
 plt.legend(legendList,frameon=False)
-plt.ylabel('Weekly Cases per 100k')
+plt.ylabel('Positive Percentage')
 commonPlotDecoration(ax)
 plt.title('Specific Scottish Councils')
 #plt.ylim(0,350/7)
-
+plt.ylim(0,15)
 
 plt.show()
 # %% daily cases Bin by Restriction Level
@@ -314,6 +319,7 @@ plt.show()
 # %% Calculate Council Weekly Values
 import imgkit
 from tableTemplate import css
+maxDate = weeklyCases['dateEnd'].max()
 #= dailyCasesByCouncil.groupby(['CA','Date'])[['DailyPositive']].sum()
 lag = 2;
 dailyCasesByCouncil.reset_index(inplace=True)
