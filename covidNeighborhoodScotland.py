@@ -355,7 +355,7 @@ from tableTemplate import css
 maxDate = weeklyCases['dateEnd'].max()
 #= dailyCasesByCouncil.groupby(['CA','Date'])[['DailyPositive']].sum()
 lag = 2;
-dailyCasesByCouncil.reset_index(inplace=True)
+#dailyCasesByCouncil.reset_index(inplace=True)
 t2=dailyCasesByCouncil['Date'].max()-dt.timedelta(lag)
 t1=dailyCasesByCouncil['Date'].max()-dt.timedelta(lag+7)
 dailyCasesByCouncil.set_index(['Date'],inplace=True)
@@ -394,7 +394,7 @@ councilTable.rename(di,axis=1,inplace=True)
 pd.set_option('precision',2)
 
 fileModString =maxDate.strftime('%b-%d-%Y')
-if ~isnotebook():
+if (not isnotebook()):
     header='<b>Scotland councils ordered by cases per 100k population for 7 days ending ' + fileModString + '</b><br><br>'
     #html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
     html=(councilTable.to_html(formatters={
@@ -406,7 +406,7 @@ if ~isnotebook():
 
     imgkit.from_string(css+header+html+footer,'councilRanks.jpg',options={'quality':30})
 else:
-    councilTable
+    display(councilTable)
 
 
 # %% Render Top30 Neighborhood table
