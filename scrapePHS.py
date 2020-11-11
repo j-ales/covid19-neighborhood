@@ -46,7 +46,7 @@ def updateWeeklyCaseCsv(oldFile, newFile):
     cases['IZCode'] = cases['IntZone']
     cases['dateEnd'] = cases['dateEnd'].dt.strftime('%d %B %Y')
     cases = cases[['IZCode', 'council', 'IZ', 'dateStart', 'dateEnd', 'cases', 'pop']]
-    cases = cases.drop_duplicates(inplace=True)
+    cases.drop_duplicates(inplace=True)
     cases.to_csv(oldFile)
 
 # %% [markdown]
@@ -270,8 +270,6 @@ while not finished:
             end_date = end_date_fix #reset end date.
             councilsFinished.append(thisCouncil)
         print('Finished Scraping')
-        print('Updating File: ' + outputFile)
-        updateWeeklyCaseCsv(outputFile, 'tmp.csv')
 
         finished=True
     except KeyboardInterrupt:
@@ -282,4 +280,6 @@ while not finished:
         print(f'{errorCount} errors happened. Re-establishing connection')
         continue
 
+print('Updating File: ' + outputFile)
+updateWeeklyCaseCsv(outputFile, 'tmp.csv')
 # %%
