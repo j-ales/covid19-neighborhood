@@ -15,7 +15,8 @@
 # ---
 
 # %% [markdown]
-# This script updates the csv file containing the Intermediate zone data. 
+# This script updates the csv file containing the Intermediate zone data. It requires manual
+# updating of what the newest date data is available from the PHS website.
 
 # %%
 import requests
@@ -63,8 +64,17 @@ adapter = HTTPAdapter(max_retries=retry_strategy)
 
 # Definitions
 outputFile = 'scotland_weekly_cases_iz.csv'
-start_date = dt.date(2020, 11, 7)
-end_date = dt.date(2020, 11, 7)
+currentData = pd.read_csv(oldFile, thousands=',')
+max(currentData['dateEnd'])
+
+#default to recollect previous 4 days.
+start_date =pd.to_datetime(max(currentData['dateEnd']))-dt.timedelta(3)
+start_date = start_date.date()
+
+#Alternatively manually set date to start from
+#start_date = dt.date(2020, 11, 8)
+
+end_date = dt.date(2020, 11, 8)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
 #List of councils to skip
