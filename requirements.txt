@@ -1,5 +1,12 @@
 matplotlib
 numpy
 pandas
+datetime
 requests
-uk_covid19
+#uk_covid19
+bs4
+json
+re
+urllib
+imgkit
+
