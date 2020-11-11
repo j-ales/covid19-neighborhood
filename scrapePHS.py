@@ -9,6 +9,29 @@ import datetime as dt
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
+# %%
+
+def updateWeeklyCaseCsv(oldFile, newFile):
+    cases = pd.read_csv(newFile, thousands=',')
+
+    casesOlder = pd.read_csv(oldFile, thousands=',')
+
+    izNames = pd.read_csv('scotland-iz.csv')
+
+    cases['dateEnd'] = pd.to_datetime(cases['dateEnd'])
+    casesOlder['dateEnd'] = pd.to_datetime(casesOlder['dateEnd'])
+    casesOlder = casesOlder.loc[casesOlder['dateEnd'] < min(cases['dateEnd'])]
+    cases = cases.append(casesOlder)
+    cases = pd.merge(left=cases, right=izNames[['IntZone', 'IntZoneName', 'CAName']], left_on=['council', 'IZ'],
+                     right_on=['CAName', 'IntZoneName'])
+    cases['IZCode'] = cases['IntZone']
+    cases['dateEnd'] = cases['dateEnd'].dt.strftime('%d %B %Y')
+    cases = cases[['IZCode', 'council', 'IZ', 'dateStart', 'dateEnd', 'cases', 'pop']]
+    cases = cases.drop_duplicates(inplace=True)
+    cases.to_csv(oldFile)
+
+# %%
+
 retry_strategy = Retry(
     total=3,
     status_forcelist=[429, 500, 502, 503, 504],
@@ -16,7 +39,8 @@ retry_strategy = Retry(
 )
 adapter = HTTPAdapter(max_retries=retry_strategy)
 
-
+# Definitions
+outputFile = 'scotland_weekly_cases_iz.csv'
 start_date = dt.date(2020, 11, 1)
 end_date = dt.date(2020, 11, 7)
 end_date_fix = end_date
@@ -220,7 +244,10 @@ while not finished:
                 df.to_csv('tmp.csv')
             end_date = end_date_fix #reset end date.
             councilsFinished.append(thisCouncil)
-        print('Finished')
+        print('Finished Scraping')
+        print('Updating File: ' + outputFile)
+        updateWeeklyCaseCsv(outputFile, 'tmp.csv')
+
         finished=True
     except KeyboardInterrupt:
         print("Caught Keyboard Interrupt")
