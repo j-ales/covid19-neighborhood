@@ -5,7 +5,7 @@ datetime
 requests
 #uk_covid19
 bs4
-json
+#json
 re
 urllib
 imgkit
