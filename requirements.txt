@@ -1,3 +1,5 @@
+urllib
+imgkit
 matplotlib
 numpy
 pandas
@@ -6,7 +8,5 @@ requests
 #uk_covid19
 bs4
 #json
-re
-urllib
-imgkit
+#re
 
