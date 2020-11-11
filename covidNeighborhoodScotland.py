@@ -1,3 +1,20 @@
+# ---
+# jupyter:
+#   jupytext:
+#     cell_metadata_filter: title,-all
+#     formats: ipynb,py:percent
+#     text_representation:
+#       extension: .py
+#       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.6.0
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+# ---
+
+# %%
 import pandas as pd
 import numpy as np
 import datetime as dt
@@ -316,8 +333,24 @@ plt.title('Scotland By Lockdown Level')
 plt.savefig('scotlandWeeklyByLevel.png')
 
 plt.show()
+# %%
+
 # %% Calculate Council Weekly Values
-import imgkit
+def isnotebook():
+    try:
+        shell = get_ipython().__class__.__name__
+        if shell == 'ZMQInteractiveShell':
+            return True   # Jupyter notebook or qtconsole
+        elif shell == 'TerminalInteractiveShell':
+            return False  # Terminal running IPython
+        else:
+            return False  # Other type (?)
+    except NameError:
+        return False      # Probably standard Python interpreter
+
+if (not isnotebook()):
+    import imgkit
+
 from tableTemplate import css
 maxDate = weeklyCases['dateEnd'].max()
 #= dailyCasesByCouncil.groupby(['CA','Date'])[['DailyPositive']].sum()
@@ -361,20 +394,22 @@ councilTable.rename(di,axis=1,inplace=True)
 pd.set_option('precision',2)
 
 fileModString =maxDate.strftime('%b-%d-%Y')
+if ~isnotebook():
+    header='<b>Scotland councils ordered by cases per 100k population for 7 days ending ' + fileModString + '</b><br><br>'
+    #html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
+    html=(councilTable.to_html(formatters={
+        'Cases this week': '{:,.0f}'.format,
+        'Cases last week': '{:,.0f}'.format,
+        'Restriction Level': '{:,.0f}'.format,
+        },index=False))
+    footer='<br>Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
 
-header='<b>Scotland councils ordered by cases per 100k population for 7 days ending ' + fileModString + '</b><br><br>'
-#html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
-html=(councilTable.to_html(formatters={
-    'Cases this week': '{:,.0f}'.format,
-    'Cases last week': '{:,.0f}'.format,
-    'Restriction Level': '{:,.0f}'.format,
-    },index=False))
-footer='<br>Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
-
-imgkit.from_string(css+header+html+footer,'councilRanks.jpg',options={'quality':30})
+    imgkit.from_string(css+header+html+footer,'councilRanks.jpg',options={'quality':30})
+else:
+    councilTable
 
 
-# %%   Render Top30 Neighborhood table
+# %% Render Top30 Neighborhood table
 from IPython.display import display, HTML, Markdown
 import imgkit
 from tableTemplate import css

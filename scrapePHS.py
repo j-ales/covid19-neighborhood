@@ -1,3 +1,23 @@
+# ---
+# jupyter:
+#   jupytext:
+#     cell_metadata_filter: -all
+#     formats: ipynb,py:percent
+#     text_representation:
+#       extension: .py
+#       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.6.0
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+# ---
+
+# %% [markdown]
+# This script updates the csv file containing the Intermediate zone data. 
+
+# %%
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -9,7 +29,6 @@ import datetime as dt
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
-# %%
 
 def updateWeeklyCaseCsv(oldFile, newFile):
     cases = pd.read_csv(newFile, thousands=',')
@@ -30,6 +49,9 @@ def updateWeeklyCaseCsv(oldFile, newFile):
     cases = cases.drop_duplicates(inplace=True)
     cases.to_csv(oldFile)
 
+# %% [markdown]
+# Change the dates below to the select the dates to scrape from the PHS tableau.   Choose the most current date available for the end_date and 4 days before the previous data grab.  Data comes in slowly so most recent data can be revised in new days.  
+
 # %%
 
 retry_strategy = Retry(
@@ -41,7 +63,7 @@ adapter = HTTPAdapter(max_retries=retry_strategy)
 
 # Definitions
 outputFile = 'scotland_weekly_cases_iz.csv'
-start_date = dt.date(2020, 11, 1)
+start_date = dt.date(2020, 11, 7)
 end_date = dt.date(2020, 11, 7)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
@@ -49,13 +71,16 @@ df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "po
 councilsFinished = []
 #councilsFinished = [ "Aberdeen City", "Aberdeenshire"]
 
+# %% [markdown]
+# The next section  does the scraping proper.  Can take a while.   It will display what it is getting.  At the end it will update the file. 
+
 # %%
 
 errorCount = 0
 finished = False
 
 while not finished:
-    print("Top of while loop")
+    print("Opening connection to: https://public.tableau.com/views/COVID-19DailyDashboard_15960160643010/Overview")
     try:
         s = requests.Session()
         s.mount("https://", adapter)
@@ -256,3 +281,5 @@ while not finished:
         errorCount = errorCount +1
         print(f'{errorCount} errors happened. Re-establishing connection')
         continue
+
+# %%
