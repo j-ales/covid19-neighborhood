@@ -64,7 +64,7 @@ adapter = HTTPAdapter(max_retries=retry_strategy)
 
 # Definitions
 outputFile = 'scotland_weekly_cases_iz.csv'
-currentData = pd.read_csv(oldFile, thousands=',')
+currentData = pd.read_csv(outputFile, thousands=',')
 max(currentData['dateEnd'])
 
 #default to recollect previous 4 days.
