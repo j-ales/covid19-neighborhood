@@ -65,16 +65,18 @@ adapter = HTTPAdapter(max_retries=retry_strategy)
 # Definitions
 outputFile = 'scotland_weekly_cases_iz.csv'
 currentData = pd.read_csv(outputFile, thousands=',')
-max(currentData['dateEnd'])
+
+print(f'Last date in current file is: {max(pd.to_datetime(currentData["dateEnd"]))}')
 
 #default to recollect previous 4 days.
-start_date =pd.to_datetime(max(currentData['dateEnd']))-dt.timedelta(3)
+start_date =max(pd.to_datetime(currentData['dateEnd']))-dt.timedelta(3)
 start_date = start_date.date()
+print(f'Collecting data from: {start_date}')
 
 #Alternatively manually set date to start from
 #start_date = dt.date(2020, 11, 8)
 
-end_date = dt.date(2020, 11, 8)
+end_date = dt.date(2020, 11, 12)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
 #List of councils to skip

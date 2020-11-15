@@ -19,6 +19,9 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import matplotlib.pyplot as plt
+import os.path
+import time
+import requests
 from matplotlib.dates import ConciseDateFormatter
 
 # https://www.opendata.nhs.scot/datastore/dump/427f9a25-db22-4014-a3bc-893b68243055?bom=True
@@ -49,6 +52,11 @@ def commonPlotDecoration(ax):
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
 
+def get_file(url,local_filename):
+    #local_filename = url.split('/')[-1]
+    r = requests.get(url)
+    open(local_filename, 'wb').write(r.content)
+    return
 
 
 # %%
@@ -68,6 +76,14 @@ HE_centroids = pd.read_csv('./learning-providers-plus.csv')
 
 weeklyCases =  pd.read_csv('scotland_weekly_cases_iz.csv', thousands=',');
 #weeklyCases =  pd.read_csv('scotland-iz-cases-from-aug.csv', thousands=',');
+
+# # Get the latest case data from gov.uk
+filename = './scotland-daily-council.csv'
+# # if the file doesn't exist or it is more than 24 hours old
+if not os.path.isfile(filename) or \
+        (time.time() - os.path.getmtime(filename)) / (60 * 60) > 24:
+    url = "https://www.opendata.nhs.scot/dataset/b318bddf-a4dc-4262-971f-0ba329e09b87/resource/427f9a25-db22-4014-a3bc-893b68243055/download/trend_ca_20201107.csv"
+    get_file(url,filename)
 
 #https://www.opendata.nhs.scot/dataset/b318bddf-a4dc-4262-971f-0ba329e09b87/resource/427f9a25-db22-4014-a3bc-893b68243055/download/trend_ca_20201107.csv
 dailyCasesByCouncil = pd.read_csv('scotland-daily-council.csv')
@@ -210,9 +226,10 @@ plt.show()
 #[33,27.3,19.6]
 
 iLevel = 3
+medianDensity= weeklyCases.loc[(weeklyCases['level']==iLevel)]['Density'].median()
 #lowThresh, highThresh,
-popThresh = [ (0, 32, f'Scotland Areas under Level {iLevel} restrictions\nWith density BELOW 32 people/hectare' ),
-              (32, 10000,f'Scotland Areas under Level {iLevel} restrictions\nWith density ABOVE 32 people/hectare')]
+popThresh = [ (0, medianDensity, f'Scotland Areas under Level {iLevel} restrictions\nWith density BELOW {medianDensity:.0f} people/hectare' ),
+              (medianDensity, 10000,f'Scotland Areas under Level {iLevel} restrictions\nWith density ABOVE {medianDensity:.0f} people/hectare')]
 
 for lowPopThresh, highPopThresh, titleText in popThresh:
     fig, ax = plt.subplots(1, 1)
@@ -237,8 +254,8 @@ for lowPopThresh, highPopThresh, titleText in popThresh:
     plt.title(titleText)
     #plt.title(f'Scotland Weekly Case Rate by SIMD')
 
-    plt.ylim(0,350)
-    plt.savefig(f'scotlandWeeklyBySimd{lowPopThresh}.png')
+    plt.ylim(0,300)
+    plt.savefig(f'scotlandWeeklyBySimd{lowPopThresh:.0f}.png')
     plt.show()
 
 # %% Bin by Restriction Level
@@ -265,7 +282,7 @@ plt.legend(legendList,frameon=False)
 plt.ylabel('Weekly Cases per 100k')
 commonPlotDecoration(ax)
 plt.title('Scotland By Lockdown Level')
-plt.ylim(0,350)
+plt.ylim(0,300)
 
 plt.show()
 # %% Weekly cases for specific councils.
@@ -301,7 +318,7 @@ plt.legend(legendList,frameon=False)
 plt.ylabel('Positive Percentage')
 commonPlotDecoration(ax)
 plt.title('Specific Scottish Councils')
-#plt.ylim(0,350/7)
+#plt.ylim(0,300)
 plt.ylim(0,15)
 
 plt.show()
@@ -321,21 +338,51 @@ for iLevel in range(1,3+1):
 
     dailyRate = 1e5*dailyPos/popByLevel['All people'].loc[iLevel]
 
-    dailyRate.plot(y='DailyPositive', ax=ax, linewidth=2)
+    dailyRate.plot(y='DailyPositive', ax=ax, linewidth=3)
 
 plt.xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
 
 plt.legend(legendList,frameon=False)
 plt.ylabel('Weekly Cases per 100k')
 commonPlotDecoration(ax)
-plt.title('Scotland By Lockdown Level')
-#plt.ylim(0,350/7)
+plt.title('Scotland Cases/100k By Lockdown Level')
+plt.ylim(0,300)
 plt.savefig('scotlandWeeklyByLevel.png')
+
+plt.show()
+# %% daily cases Bin by Restriction Level
+fig, ax = plt.subplots(1, 1)
+#[33,27.3,19.6]
+
+councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
+popByLevel=councilPopRes.groupby('level').sum()
+legendList = list()
+for iLevel in range(1,3+1):
+    weekly = pd.DataFrame()
+    thisLevel = dailyCasesByCouncil.loc[(dailyCasesByCouncil['level']==iLevel)]
+
+    legendList.append(f'{sum(restricted["level"]==iLevel)} councils with {popByLevel["All people"].loc[iLevel]:,} people in level {iLevel}')
+
+    weekly = thisLevel.groupby(['Date'])[['TotalTests']].sum().rolling(7).sum()
+    weekly['PositivesTests'] = thisLevel.groupby(['Date'])[['PositiveTests']].sum().rolling(7).sum()
+
+    dailyRate = 100*weekly['PositivesTests'].div(weekly['TotalTests'])
+
+    dailyRate.plot(y='DailyPositive', ax=ax, linewidth=3)
+
+plt.xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+
+plt.legend(legendList,frameon=False)
+plt.ylabel('Positive Test Percentage')
+commonPlotDecoration(ax)
+plt.title('Scotland Positive Test Rate By Lockdown Level')
+plt.ylim(0,10)
+plt.savefig('scotlandWeeklyPercentByLevel.png')
 
 plt.show()
 # %%
 
-# %% Calculate Council Weekly Values
+# %% Calculate Council Weekly Rate Values
 def isnotebook():
     try:
         shell = get_ipython().__class__.__name__
@@ -351,7 +398,8 @@ def isnotebook():
 if (not isnotebook()):
     import imgkit
 
-from tableTemplate import css
+import tableTemplate as tt
+
 maxDate = weeklyCases['dateEnd'].max()
 #= dailyCasesByCouncil.groupby(['CA','Date'])[['DailyPositive']].sum()
 lag = 2;
@@ -362,13 +410,19 @@ dailyCasesByCouncil.set_index(['Date'],inplace=True)
 
 thisWeek=dailyCasesByCouncil.loc[pd.date_range(t1,t2)].groupby('CA').sum()['DailyPositive']
 lastWeek=dailyCasesByCouncil.loc[pd.date_range(t1-dt.timedelta(7),t2-dt.timedelta(7))].groupby('CA').sum()['DailyPositive']
+thisWeekTests=dailyCasesByCouncil.loc[pd.date_range(t1,t2)].groupby('CA').sum()['TotalTests']
+lastWeekTests=dailyCasesByCouncil.loc[pd.date_range(t1-dt.timedelta(7),t2-dt.timedelta(7))].groupby('CA').sum()['TotalTests']
+# thisWeekPosPerc=dailyCasesByCouncil.loc[pd.date_range(t1,t2)].groupby('CA').mean()['PositivePercentage']
+# lastWeekPosPerc=dailyCasesByCouncil.loc[pd.date_range(t1-dt.timedelta(7),t2-dt.timedelta(7))].groupby('CA').mean()['PositivePercentage']
+
 dailyCasesByCouncil.reset_index(inplace=True)
 
 
-
-councilTable = pd.DataFrame({'thisWeekCase':thisWeek,
-                             'lastWeekCase':lastWeek,
-                             'caseDiff':(thisWeek-lastWeek)})
+thisWeekPosPerc =100*thisWeek/thisWeekTests
+lastWeekPosPerc = 100*lastWeek/lastWeekTests
+councilTable = pd.DataFrame({'thisWeekCase': thisWeek,
+                             'lastWeekCase': lastWeek,
+                             'caseDiff': (thisWeek-lastWeek)})
 councilTable = pd.merge(left=councilTable,right=restricted,left_on='CA',right_on='CA')
 councilTable=pd.merge(left=councilTable,right=councilPop,left_on='CA',right_on='CA')
 
@@ -392,6 +446,13 @@ di = {'rank': 'Rank',
      }
 councilTable.rename(di,axis=1,inplace=True)
 pd.set_option('precision',2)
+lastLevel4=np.where(councilTable['Cases per 100k pop']>300)[0]
+if lastLevel4.size>0:
+    lastLevel4 =lastLevel4[-1]+1
+else:
+    lastLevel4=0
+lastLevel3=np.where(councilTable['Cases per 100k pop']>150)[0][-1]+1
+lastLevel2=np.where(councilTable['Cases per 100k pop']>=75)[0][-1]+1
 
 fileModString =maxDate.strftime('%b-%d-%Y')
 if (not isnotebook()):
@@ -402,11 +463,64 @@ if (not isnotebook()):
         'Cases last week': '{:,.0f}'.format,
         'Restriction Level': '{:,.0f}'.format,
         },index=False))
-    footer='<br>Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
+    footer = '<br>Colors Scot.gov indicator cutoffs: Purple=4,Red=3,Orange=2,Green=1, Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
 
-    imgkit.from_string(css+header+html+footer,'councilRanks.jpg',options={'quality':30})
+    imgkit.from_string( tt.rankColorCSS(lastLevel4,lastLevel3,lastLevel2,32)+header+html+footer,'councilRanks.jpg',options={'quality':30})
 else:
     display(councilTable)
+
+#Now make the table for % positive tests
+
+
+thisWeekPosPerc = 100*thisWeek/thisWeekTests
+lastWeekPosPerc = 100*lastWeek/lastWeekTests
+councilTable = pd.DataFrame({'thisWeekPerc': thisWeekPosPerc,
+                             'lastWeekPerc': lastWeekPosPerc,
+                             'percDiff': (thisWeekPosPerc-lastWeekPosPerc)})
+councilTable = pd.merge(left=councilTable,right=restricted,left_on='CA',right_on='CA')
+councilTable=pd.merge(left=councilTable,right=councilPop,left_on='CA',right_on='CA')
+
+councilTable.sort_values('thisWeekPerc',ascending=False,inplace=True)
+councilTable['rank']=np.arange(32)+1
+councilTable=councilTable[['rank','council','level','lastWeekPerc','thisWeekPerc','percDiff']]
+
+di = {'rank': 'Rank',
+      'council': 'Local Authority',
+      'level':   'Restriction Level',
+      'thisWeekPerc': 'Postive Test Rate This Week',
+      'lastWeekPerc': 'Postive Test Rate Last Week',
+      'percDiff': 'Difference',
+     }
+councilTable.rename(di,axis=1,inplace=True)
+pd.set_option('precision',2)
+lastLevel4=np.where(councilTable['Postive Test Rate This Week']>10)[0]
+if lastLevel4.size>0:
+    lastLevel4 =lastLevel4[-1]+1
+else:
+    lastLevel4=0
+lastLevel3=np.where(councilTable['Postive Test Rate This Week']>5)[0][-1]+1
+lastLevel2=np.where(councilTable['Postive Test Rate This Week']>=3)[0][-1]+1
+
+fileModString =maxDate.strftime('%b-%d-%Y')
+if (not isnotebook()):
+    header='<b>Scotland councils ordered by cases per 100k population for 7 days ending ' + fileModString + '</b><br><br>'
+    #html=(top30.to_html(formatters={'Number of Cases': '{:,.0f}'.format, 'Cases per 100k pop': '{:,.0f}'.format, 'Student Percentage': '{:,.0f}%'.format},index=False))
+    html=(councilTable.to_html(formatters={
+        'Postive Test Rate This Week': '{:,.1f}%'.format,
+        'Postive Test Rate Last Week': '{:,.1f}%'.format,
+        'Difference': '{:,.1f}%'.format,
+        'Restriction Level': '{:,.0f}'.format,
+        },index=False))
+    footer='<br>Colors Scot.gov indicator cutoffs: Purple=4,Red=3,Orange=2,Green=1, Created by Justin Ales, code available: https://github.com/j-ales/covid19-neighborhood'
+
+    imgkit.from_string( tt.rankColorCSS(lastLevel4,lastLevel3,lastLevel2,32)+header+html+footer,'councilPercentRanks.jpg',options={'quality':30})
+else:
+    display(councilTable)
+
+
+
+
+
 
 
 # %% Render Top30 Neighborhood table
