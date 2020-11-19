@@ -1,22 +1,22 @@
 ﻿CA,council,level
 S12000005,Clackmannanshire,3
-S12000008,East Ayrshire,3
-S12000045,East Dunbartonshire,3
-S12000010,East Lothian,3
-S12000011,East Renfrewshire,3
+S12000008,East Ayrshire,4
+S12000045,East Dunbartonshire,4
+S12000010,East Lothian,2
+S12000011,East Renfrewshire,4
 S12000036,City of Edinburgh,3
 S12000014,Falkirk,3
-S12000049,Glasgow City,3
+S12000049,Glasgow City,4
 S12000018,Inverclyde,3
-S12000019,Midlothian,3
+S12000019,Midlothian,2
 S12000021,North Ayrshire,3
-S12000050,North Lanarkshire,3
-S12000038,Renfrewshire,3
-S12000028,South Ayrshire,3
-S12000029,South Lanarkshire,3
-S12000030,Stirling,3
-S12000039,West Dunbartonshire,3
-S12000040,West Lothian,3
+S12000050,North Lanarkshire,4
+S12000038,Renfrewshire,4
+S12000028,South Ayrshire,4
+S12000029,South Lanarkshire,4
+S12000030,Stirling,4
+S12000039,West Dunbartonshire,4
+S12000040,West Lothian,4
 S12000042,Dundee City,3
 S12000033,Aberdeen City,2
 S12000034,Aberdeenshire,2

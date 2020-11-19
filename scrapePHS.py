@@ -76,7 +76,7 @@ print(f'Collecting data from: {start_date}')
 #Alternatively manually set date to start from
 #start_date = dt.date(2020, 11, 8)
 
-end_date = dt.date(2020, 11, 12)
+end_date = dt.date(2020, 11, 16)
 end_date_fix = end_date
 df = pd.DataFrame(columns=["council", "IZ", "dateStart", "dateEnd", "cases", "pop"])
 #List of councils to skip

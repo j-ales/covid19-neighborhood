@@ -60,6 +60,7 @@ def get_file(url,local_filename):
 
 
 # %%
+caseMax = 350
 datazoneToInterZone = pd.read_csv('scotland-datazone-to-interzone.csv');
 
 # QS603SC
@@ -225,38 +226,38 @@ plt.show()
 # %% Bin by SIMD and restriction
 #[33,27.3,19.6]
 
-iLevel = 3
-medianDensity= weeklyCases.loc[(weeklyCases['level']==iLevel)]['Density'].median()
-#lowThresh, highThresh,
-popThresh = [ (0, medianDensity, f'Scotland Areas under Level {iLevel} restrictions\nWith density BELOW {medianDensity:.0f} people/hectare' ),
-              (medianDensity, 10000,f'Scotland Areas under Level {iLevel} restrictions\nWith density ABOVE {medianDensity:.0f} people/hectare')]
+for iLevel in (3,4):
+    medianDensity= weeklyCases.loc[(weeklyCases['level']==iLevel)]['Density'].median()
+    #lowThresh, highThresh,
+    popThresh = [ (0, medianDensity, f'Scotland Areas under Level {iLevel} restrictions\nWith density BELOW {medianDensity:.0f} people/hectare' ),
+                  (medianDensity, 10000,f'Scotland Areas under Level {iLevel} restrictions\nWith density ABOVE {medianDensity:.0f} people/hectare')]
 
-for lowPopThresh, highPopThresh, titleText in popThresh:
-    fig, ax = plt.subplots(1, 1)
+    for lowPopThresh, highPopThresh, titleText in popThresh:
+        fig, ax = plt.subplots(1, 1)
 
-    legendList = list()
-    for iSimd in range(1,5+1):
-        izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd)
-                                    & (weeklyCases['level']==iLevel)
-                                     & (weeklyCases['Density']<highPopThresh) & (weeklyCases['Density']>lowPopThresh)]
-        #izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd) & (   weeklyCases['council'].isin(restricted['council']))]
+        legendList = list()
+        for iSimd in range(1,5+1):
+            izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd)
+                                        & (weeklyCases['level']==iLevel)
+                                         & (weeklyCases['Density']<highPopThresh) & (weeklyCases['Density']>lowPopThresh)]
+            #izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd) & (   weeklyCases['council'].isin(restricted['council']))]
 
-        legendList.append(f'{len(izWithSimd["IntZone"].unique())} areas with most pop. in SIMD{iSimd} zones')
+            legendList.append(f'{len(izWithSimd["IntZone"].unique())} areas with most pop. in SIMD{iSimd} zones')
 
-        izWithSimd= izWithSimd.groupby(['dateEnd'])[['casePer100k']].mean()
-        izWithSimd.plot(y='casePer100k',ax=ax,linewidth=3)
+            izWithSimd= izWithSimd.groupby(['dateEnd'])[['casePer100k']].mean()
+            izWithSimd.plot(y='casePer100k',ax=ax,linewidth=3)
 
-    plt.xlim([dt.date(2020, 8, 1), weeklyCases['dateEnd'].max()-dt.timedelta(0)])
+        plt.xlim([dt.date(2020, 8, 1), weeklyCases['dateEnd'].max()-dt.timedelta(0)])
 
-    plt.legend(legendList,frameon=False)
-    plt.ylabel('Weekly Cases per 100k')
-    commonPlotDecoration(ax)
-    plt.title(titleText)
-    #plt.title(f'Scotland Weekly Case Rate by SIMD')
+        plt.legend(legendList,frameon=False)
+        plt.ylabel('Weekly Cases per 100k')
+        commonPlotDecoration(ax)
+        plt.title(titleText)
+        #plt.title(f'Scotland Weekly Case Rate by SIMD')
 
-    plt.ylim(0,300)
-    plt.savefig(f'scotlandWeeklyBySimd{lowPopThresh:.0f}.png')
-    plt.show()
+        plt.ylim(0,caseMax)
+        plt.savefig(f'scotlandWeeklyBySimd_L{iLevel}_P{lowPopThresh:.0f}.png')
+        plt.show()
 
 # %% Bin by Restriction Level
 fig, ax = plt.subplots(1, 1)
@@ -266,7 +267,7 @@ lowPopThresh = 0
 highPopThresh = 10000
 
 legendList = list()
-for iLevel in range(1,3+1):
+for iLevel in range(1,4+1):
     izWithSimd = weeklyCases.loc[(weeklyCases['level']==iLevel)
                                  & (weeklyCases['Density']<highPopThresh) & (weeklyCases['Density']>lowPopThresh) ]
     #izWithSimd = weeklyCases.loc[(weeklyCases['simdMostPop']==iSimd) & (   weeklyCases['council'].isin(restricted['council']))]
@@ -282,11 +283,15 @@ plt.legend(legendList,frameon=False)
 plt.ylabel('Weekly Cases per 100k')
 commonPlotDecoration(ax)
 plt.title('Scotland By Lockdown Level')
-plt.ylim(0,300)
+plt.ylim(0,caseMax)
 
 plt.show()
 # %% Weekly cases for specific councils.
-fig, ax = plt.subplots(1, 1)
+fig1=plt.figure()
+ax = fig1.add_subplot(111)
+fig2=plt.figure()
+ax2 = fig2.add_subplot(111)
+
 #[33,27.3,19.6]
 
 councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
@@ -301,27 +306,43 @@ for councilName  in councilList:
     legendList.append(councilName)
 
 
-    # dailyPos = thisLevel.groupby(['Date'])[['DailyPositive']].sum().rolling(7).sum()
-    # dailyRate = 1e5*dailyPos/popList['All people'].loc[councilName]
+    dailyPos = thisLevel.groupby(['Date'])[['DailyPositive']].sum().rolling(7).sum()
+    dailyRate = 1e5*dailyPos/popList['All people'].loc[councilName]
 
-    dailyPositivePercent = thisLevel.groupby(['Date'])[['PositivePercentage']].mean().rolling(7).mean()
-    dailyRate =  dailyPositivePercent
+    weekly = thisLevel.groupby(['Date'])[['TotalTests']].sum().rolling(7).sum()
+    weekly['PositivesTests'] = thisLevel.groupby(['Date'])[['PositiveTests']].sum().rolling(7).sum()
 
+    dailyPercent = 100 * weekly['PositivesTests'].div(weekly['TotalTests'])
+
+    # dailyPositivePercent = thisLevel.groupby(['Date'])[['PositivePercentage']].mean().rolling(7).mean()
+    # dailyRate =  dailyPositivePercent
+
+    lw = 2
     if councilName=='Fife':
-        dailyRate.plot(y='PositivePercentage', ax=ax, linewidth=4)
-    else:
-        dailyRate.plot(y='PositivePercentage', ax=ax, linewidth=2)
+        lw = 4
 
-plt.xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+    dailyRate.plot(y='DailyPositive', ax=ax, linewidth=lw)
+    dailyPercent.plot(y='PositivePercentage', ax=ax2, linewidth=lw)
 
-plt.legend(legendList,frameon=False)
-plt.ylabel('Positive Percentage')
+
+ax.set_xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+ax2.set_xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+
+ax.legend(legendList,frameon=False)
+ax2.legend(legendList,frameon=False)
+
+ax.set_ylabel('Weekly Cases per 100k')
+ax2.set_ylabel('Positive Percentage')
 commonPlotDecoration(ax)
-plt.title('Specific Scottish Councils')
-#plt.ylim(0,300)
-plt.ylim(0,15)
+commonPlotDecoration(ax2)
+ax.set_title('Councils Near Fife Case Rate')
+ax2.set_title('Councils Near Fife Positive Test %')
 
-plt.show()
+#plt.ylim(0,caseMax)
+ax.set_ylim(0,caseMax)
+ax2.set_ylim(0,12)
+fig1.show()
+fig2.show()
 # %% daily cases Bin by Restriction Level
 fig, ax = plt.subplots(1, 1)
 #[33,27.3,19.6]
@@ -329,7 +350,7 @@ fig, ax = plt.subplots(1, 1)
 councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
 popByLevel=councilPopRes.groupby('level').sum()
 legendList = list()
-for iLevel in range(1,3+1):
+for iLevel in range(1,4+1):
     thisLevel = dailyCasesByCouncil.loc[(dailyCasesByCouncil['level']==iLevel)]
 
     legendList.append(f'{sum(restricted["level"]==iLevel)} councils with {popByLevel["All people"].loc[iLevel]:,} people in level {iLevel}')
@@ -340,13 +361,13 @@ for iLevel in range(1,3+1):
 
     dailyRate.plot(y='DailyPositive', ax=ax, linewidth=3)
 
-plt.xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+ax.set_xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
 
 plt.legend(legendList,frameon=False)
 plt.ylabel('Weekly Cases per 100k')
 commonPlotDecoration(ax)
 plt.title('Scotland Cases/100k By Lockdown Level')
-plt.ylim(0,300)
+plt.ylim(0,caseMax)
 plt.savefig('scotlandWeeklyByLevel.png')
 
 plt.show()
@@ -357,7 +378,7 @@ fig, ax = plt.subplots(1, 1)
 councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
 popByLevel=councilPopRes.groupby('level').sum()
 legendList = list()
-for iLevel in range(1,3+1):
+for iLevel in range(1,4+1):
     weekly = pd.DataFrame()
     thisLevel = dailyCasesByCouncil.loc[(dailyCasesByCouncil['level']==iLevel)]
 
@@ -376,7 +397,7 @@ plt.legend(legendList,frameon=False)
 plt.ylabel('Positive Test Percentage')
 commonPlotDecoration(ax)
 plt.title('Scotland Positive Test Rate By Lockdown Level')
-plt.ylim(0,10)
+plt.ylim(0,15)
 plt.savefig('scotlandWeeklyPercentByLevel.png')
 
 plt.show()
@@ -516,6 +537,7 @@ if (not isnotebook()):
     imgkit.from_string( tt.rankColorCSS(lastLevel4,lastLevel3,lastLevel2,32)+header+html+footer,'councilPercentRanks.jpg',options={'quality':30})
 else:
     display(councilTable)
+
 
 
 
