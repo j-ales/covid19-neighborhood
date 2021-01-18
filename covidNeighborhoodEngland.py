@@ -171,10 +171,7 @@ MSOA_centroids.insert(1, "GROUPS", groups)
 
 # %% Make a plot of cases per week that classifies MSOAs by distance to universities.
 
-
-
-
-
+# Put together the various dataframes above into one merged dataframe.  
 
 merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='areaCode')
 merged = pandas.merge(left=merged, right=MSOA_pop, left_on='MSOA11CD', right_on='MSOA Code')
@@ -194,8 +191,11 @@ merged['Student Percentage'] = merged['Student Population'] / merged['Total Pop'
 
 
 # %%
-# Separate areas by student concentation.
+# Separate English MSOA by student concentation.
+### 
 popThresh = .10
+###
+
 highStudent = merged.loc[merged['Student Percentage'] >= popThresh]
 lowStudent = merged.loc[merged['Student Percentage'] < popThresh]
 
@@ -223,6 +223,8 @@ plt.show()
 
 # %% Separate data by student population concentration & distance to russel group universities
 
+# Look at all Russel Group Universities in England as a group 
+
 ###
 
 popThresh = .25
@@ -240,7 +242,6 @@ uniGroup   = 'rg_distance'
 # far = merged.loc[merged['uni_distance'] >= distThresh, :]
 #Select specific Uni
 selectTheseUni = np.full(merged.shape[0], True)
-#selectTheseUni = (merged['uni_name']=='UNIVERSITY OF OXFORD') | (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
 
 close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
@@ -268,8 +269,10 @@ plt.show()
 
 
 # %% Separate data by student population concentration & distance to Sheffield
-###
 
+# Pull out just U Sheffield
+
+###
 popThresh = .10
 distThresh = 3
 ####
@@ -313,8 +316,9 @@ plt.show()
 
 
 # %% Separate data by student population concentration & distance to Manchester
-###
+# Pull out just U Manchester
 
+###
 popThresh = .15
 distThresh = 2
 ####
@@ -359,8 +363,9 @@ plt.show()
 
 
 # %% Separate data by student population concentration & distance to Cambridge
-###
+# Pull out just U Cambridge
 
+###
 popThresh = .15
 distThresh = 3
 ####
@@ -403,3 +408,5 @@ plt.legend(['{} areas within {} miles of Cambridge\n and students over {:.0%} of
 commonPlotDecoration(ax)
 plt.ylabel('Cases/100k Pop 7-day average')
 plt.show()
+
+# %%
