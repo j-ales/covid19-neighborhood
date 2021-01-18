@@ -45,8 +45,9 @@ def haversine(lon1, lat1, lon2, lat2):
     return dist
 
 # simple wrapper to download datafiles from source.
-def get_file(url):
-    local_filename = url.split('/')[-1]
+def get_file(url,filename):
+    #local_filename = url.split('/')[-1]
+    local_filename = filename
     r = requests.get(url)
     open(local_filename, 'wb').write(r.content)
     return
@@ -70,38 +71,9 @@ filename = './MSOAs_latest.csv'
 # # if the file doesn't exist or it is more than 24 hours old
 if not os.path.isfile(filename) or \
         (time.time() - os.path.getmtime(filename)) / (60 * 60) > 24:
-    url = "https://coronavirus.data.gov.uk/downloads/msoa_data/MSOAs_latest.csv"
-    get_file(url)
-
-# %% Use API
-# # Not implemeented fully.
-# all_nations = [
-#     "areaType=ltla"
-#
-# ]
-#
-# cases_and_deaths = {
-#     "date": "date",
-#     "areaName": "areaName",
-#     "areaCode": "areaCode",
-#     "newCasesByPublishDate": "newCasesByPublishDate",
-#     # "newCasesBySpecimenDate": "newCasesBySpecimenDate",
-#     # "cumCasesByPublishDate": "cumCasesByPublishDate",
-#     # "newDeathsByDeathDate": "newDeathsByDeathDate",
-#     # "cumDeathsByDeathDate": "cumDeathsByDeathDate"
-#    # "newTestsByPublishDate": "newTestsByPublishDate"
-# }
-#
-# api = Cov19API(
-#     filters=all_nations,
-#     structure=cases_and_deaths,
-#     latest_by="newCasesByPublishDate"
-# )
-#
-#  # api.get_csv(save_as="data.csv")
-#  #  df = pandas.read_csv('./data.csv')
-# df = api.get_dataframe()
-# #data = api.get_json()
+    #url = "https://coronavirus.data.gov.uk/downloads/msoa_data/MSOAs_latest.csv"
+    url = "https://coronavirus.data.gov.uk/api/v2/data?areaType=msoa&metric=newCasesBySpecimenDateRollingSum&metric=newCasesBySpecimenDateRollingRate&metric=newCasesBySpecimenDateChange&metric=newCasesBySpecimenDateDirection&format=csv"
+    get_file(url,filename)
 
 # %% Load the data.
 MSOA_centroids = pandas.read_csv('./MSOA_2011_EW_PWC_COORD_V2.CSV')
@@ -179,6 +151,7 @@ MSOA_centroids.insert(1, "GROUPS", groups)
 
 
 
+
 # %% Make a plot of cases per week that classifies MSOAs by distance to universities.
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -191,7 +164,7 @@ distThresh = 1
 
 
 
-merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='areasCode')
+merged = pandas.merge(left=MSOA_centroids, right=covidCases, left_on='MSOA11CD', right_on='areaCode')
 merged = pandas.merge(left=merged, right=MSOA_pop, left_on='MSOA11CD', right_on='MSOA Code')
 merged = pandas.merge(left=merged, right=MSOA_student_pop, left_on='MSOA11CD', right_on='MSOA Code')
 merged = pandas.merge(left=merged, right=MSOA_density, left_on='MSOA11CD', right_on='msoacd')
@@ -202,7 +175,7 @@ merged = merged.replace(-99, 0)
 merged = merged.sort_values('uni_distance')
 
 #Normalize by MSOA population
-merged['latest_7_days_per_100k'] = 1e5 * merged.filter(like='latest_7_days').div(merged['Total Pop'], axis=0)
+#merged['latest_7_days_per_100k'] = 1e5 * merged.filter(like='latest_7_days').div(merged['Total Pop'], axis=0)
 merged['Student Percentage'] = merged['Student Population'] / merged['Total Pop']
 
 close = merged.loc[merged['uni_distance'] < distThresh, :]

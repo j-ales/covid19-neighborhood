@@ -402,7 +402,41 @@ plt.savefig('scotlandWeeklyPercentByLevel.png')
 
 plt.show()
 # %%
+# %% Estimate total infected
+fig, ax = plt.subplots(1, 1)
+#[33,27.3,19.6]
 
+councilPopRes=pd.merge(left=councilPop,right=restricted,left_on="CA",right_on="CA")
+popByLevel=councilPopRes.groupby('level').sum()
+totalPop = councilPopRes['All people'].sum()
+legendList = list()
+thisLevel = dailyCasesByCouncil
+
+#legendList.append(f'{sum(restricted["level"]==iLevel)} councils with {popByLevel["All people"].loc[iLevel]:,} people in level {iLevel}')
+
+dailyPos = thisLevel.groupby(['Date'])[['DailyPositive']].sum().rolling(7).sum()
+
+weekly = thisLevel.groupby(['Date'])[['TotalTests']].sum().rolling(7).sum()
+weekly['PositivesTests'] = thisLevel.groupby(['Date'])[['PositiveTests']].sum().rolling(7).sum()
+weekly['PositivityRate']= weekly['PositivesTests'].div(weekly['TotalTests'])
+weekly['PrevalenceRatio'] = 16*weekly['PositivityRate']**0.5 + 2.5
+dailyPercent = 100 * weekly['PositivesTests'].div(weekly['TotalTests'])
+
+weekly['TotalInfectionEstimate'] =  weekly['PositivesTests']* weekly['PrevalenceRatio']
+weekly['PercentInfectedEstimate'] = 100*weekly['TotalInfectionEstimate'] / totalPop
+
+weekly.plot(y='PercentInfectedEstimate', ax=ax, linewidth=3)
+
+# ax.set_xlim([dt.date(2020, 8, 1), dailyCasesByCouncil['Date'].max()-dt.timedelta(2)])
+
+# plt.legend(legendList,frameon=False)
+# plt.ylabel('Weekly Cases per 100k')
+# commonPlotDecoration(ax)
+# plt.title('Scotland Cases/100k By Lockdown Level')
+plt.ylim(0,2)
+# plt.savefig('scotlandWeeklyByLevel.png')
+
+plt.show()
 # %% Calculate Council Weekly Rate Values
 def isnotebook():
     try:
@@ -537,6 +571,7 @@ if (not isnotebook()):
     imgkit.from_string( tt.rankColorCSS(lastLevel4,lastLevel3,lastLevel2,32)+header+html+footer,'councilPercentRanks.jpg',options={'quality':30})
 else:
     display(councilTable)
+
 
 
 
