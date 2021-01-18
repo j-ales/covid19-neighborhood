@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import datetime
 
-from uk_covid19 import Cov19API
+#from uk_covid19 import Cov19API
 
 # %% Define functions.
 
@@ -74,13 +74,15 @@ def commonPlotDecoration(ax):
 #This file contains the population weighted centroid location of each MSOA
 if not os.path.isfile('./MSOA_2011_EW_PWC_COORD_V2.CSV'):
     url = "https://github.com/ITSLeeds/pct/releases/download/0.2.5/MSOA_2011_EW_PWC_COORD_V2.CSV"
-    get_file(url)
+    filename = url.split('/')[-1]
+    get_file(url,filename)
 
 # The sit: http://learning-provider.data.ac.uk contains lots of information for univeristy
 # This includes the main locaiton of the university.  But doesn't include all campuses.
 if not os.path.isfile('./learning-providers-plus.csv'):
     url = "http://learning-provider.data.ac.uk/data/learning-providers-plus.csv"
-    get_file(url)
+    filename = url.split('/')[-1]
+    get_file(url, filename)
 
 # # Get the latest case data from gov.uk
 filename = './MSOAs_latest.csv'
