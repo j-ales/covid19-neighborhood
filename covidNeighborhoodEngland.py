@@ -195,7 +195,7 @@ merged['Student Percentage'] = merged['Student Population'] / merged['Total Pop'
 # %%
 # Separate English MSOA by student concentation.
 ### 
-popThresh = .10
+popThresh = .3
 ###
 
 highStudent = merged.loc[merged['Student Percentage'] >= popThresh]
@@ -229,8 +229,8 @@ plt.show()
 
 ###
 
-popThresh = .25
-distThresh = 2
+popThresh = .22
+distThresh = 1
 ####
 
 #Which attributes to select data by.
@@ -247,7 +247,7 @@ selectTheseUni = np.full(merged.shape[0], True)
 
 close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
-rest = merged.loc[(merged[uniGroup] >= distThresh), :]
+rest = merged.loc[~((merged[uniGroup] < distThresh) & selectTheseUni), :]
 
 numberClose=len(close['areaCode'].unique())
 numberFar=len(far['areaCode'].unique())
@@ -294,7 +294,7 @@ selectTheseUni = (merged['uni_name']=='UNIVERSITY OF SHEFFIELD')
 
 close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
-rest = merged.loc[(merged[uniGroup] >= distThresh), :]
+rest = merged.loc[~((merged[uniGroup] < distThresh) & selectTheseUni), :]
 
 numberClose=len(close['areaCode'].unique())
 numberFar=len(far['areaCode'].unique())
@@ -341,7 +341,7 @@ selectTheseUni = (merged['uni_name']==uniNameToChoose)
 
 close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
-rest = merged.loc[(merged[uniGroup] >= distThresh), :]
+rest = merged.loc[ ~((merged[uniGroup] < distThresh) & selectTheseUni), :]
 
 numberClose=len(close['areaCode'].unique())
 numberFar=len(far['areaCode'].unique())
@@ -389,7 +389,7 @@ selectTheseUni = (merged['uni_name']=='UNIVERSITY OF CAMBRIDGE')
 
 close = merged.loc[( merged[classifyBy] >= popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni , :]
 far = merged.loc[ (merged[classifyBy] < popThresh) & (merged[uniGroup] < distThresh) & selectTheseUni, :]
-rest = merged.loc[(merged[uniGroup] >= distThresh), :]
+rest = merged.loc[~((merged[uniGroup] < distThresh) & selectTheseUni), :]
 
 numberClose=len(close['areaCode'].unique())
 numberFar=len(far['areaCode'].unique())
